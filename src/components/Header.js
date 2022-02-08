@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./index.scss";
-import { ReactComponent as LogoHypermon } from "../Assets/logo/LogoHypermon.svg";
+import LogoHypermon from "../Assets/logo/LogoHypermon.png";
 import LogoMP from "../Assets/Home/img/circle1.png";
 import HoverNav from "../Assets/Home/img/hoverNav.png";
 
