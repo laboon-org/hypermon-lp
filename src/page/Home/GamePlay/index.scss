@@ -1,0 +1,39 @@
+.Gameplay {
+  .container {
+    max-width: 1200px;
+  }
+  .Gameplay__container--wrapper {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .Gameplay_content {
+    width: 561px;
+    height: 94px;
+    p {
+      font-family: "G.I. Incognito";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 20px;
+      /* or 154% */
+
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #ffffff;
+    }
+  }
+  .Caterpie1a2 {
+    right: 434px;
+    bottom: 100px;
+  }
+  .Chuong1 {
+    right: 65px;
+    bottom: -155px;
+  }
+
+  .Squitle32 {
+    right: 0;
+    bottom: 100px;
+  }
+}
