@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "G.I. Incognito";
+  src: local("G.I. Incognito"),
+    url(./Assets/fonts/g_i_incognito/gi_incognito.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "UTM Alter Gothic";
+  src: local("UTM Alter Gothic"),
+    url(./Assets/fonts/Utm/UTMAlterGothic.ttf) format("truetype");
+}
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+body {
+  font-family: "Inter", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  #root {
+    height: 100%;
+    width: 100%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: unset !important;
+  }
+}

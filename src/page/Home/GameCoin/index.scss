@@ -1,0 +1,55 @@
+.GameCoin {
+  padding-bottom: 350px;
+
+  .container {
+    max-width: 1200px;
+  }
+  .GameCoin__content {
+    width: 652px;
+    height: 49px;
+    p {
+      font-family: "G.I. Incognito";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 20px;
+      /* or 154% */
+
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #ffffff;
+    }
+  }
+  .Gamecoin_exchange {
+    left: 92px;
+    top: 170px;
+  }
+  .Gamecoin__free {
+    top: 164px;
+    right: 124px;
+  }
+  .Gamecoin__text {
+    color: #ffffff;
+    top: 170px;
+    right: 124px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 40px;
+    font-family: "UTM Alter Gothic";
+    .dot {
+      height: 8px;
+      width: 8px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+  .bgafter {
+    z-index: 0;
+    top: -152px;
+    left: 0;
+  }
+}

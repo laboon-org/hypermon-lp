@@ -1,0 +1,29 @@
+.Ourcharacter {
+  max-width: 1600px;
+  .container {
+    width: 1200px;
+  }
+  .container-full {
+    width: 100%;
+  }
+  .Ourcharacter__item {
+    padding-top: 206px;
+  }
+
+  .Charmande1 {
+    margin-top: -216px;
+    .vector {
+      left: 336px;
+      top: 214px;
+      z-index: 0;
+    }
+    .Charmande__img {
+      z-index: 2;
+    }
+    .fire__img {
+      z-index: 2;
+      margin-left: 101px;
+      margin-top: -100px;
+    }
+  }
+}

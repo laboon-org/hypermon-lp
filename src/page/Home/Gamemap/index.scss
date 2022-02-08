@@ -1,0 +1,22 @@
+.Gamemap {
+  .container {
+    max-width: 1200px;
+  }
+  .Gamemap__content {
+    p {
+      font-family: "G.I. Incognito";
+      width: 652px;
+      height: 49px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 20px;
+      /* or 154% */
+
+      text-align: center;
+      letter-spacing: 0.05em;
+
+      color: #ffffff;
+    }
+  }
+}
