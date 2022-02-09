@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import Hypermon from "./Hypermon";
-import Header from "../../components/Header";
+
 import OurCharacter from "./OurCharacter";
 import GamePlay from "./GamePlay";
 import GameMap from "./Gamemap";

@@ -5,7 +5,6 @@ import LogoMP from "../Assets/Home/img/circle1.png";
 import HoverNav from "../Assets/Home/img/hoverNav.png";
 
 const Header = () => {
-  const [hover, setHover] = useState(false);
   const [link, setLink] = useState("Home");
   return (
     <div class="Header mx-auto">
