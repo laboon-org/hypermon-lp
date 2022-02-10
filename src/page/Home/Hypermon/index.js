@@ -1,10 +1,12 @@
 import React from "react";
 import "./index.scss";
+
 import bg from "./img/bg.png";
 import Banner from "./img/name.png";
 import totalPlayer from "./img/Totalplayer.png";
 import number from "./img/1.670.890.png";
 import Header from "../../../components/Header";
+
 const Hypermon = () => {
   return (
     <div

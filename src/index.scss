@@ -5,15 +5,16 @@
 @font-face {
   font-family: "G.I. Incognito";
   src: local("G.I. Incognito"),
-    url(./Assets/fonts/g_i_incognito/gi_incognito.ttf) format("truetype");
+    url(./assets/fonts/gi_incognito.ttf) format("truetype");
 }
-
 @font-face {
   font-family: "UTM Alter Gothic";
   src: local("UTM Alter Gothic"),
-    url(./Assets/fonts/Utm/UTMAlterGothic.ttf) format("truetype");
+    url(./assets/fonts/utm_alter_gothic.ttf) format("truetype");
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
 body {
   font-family: "Inter", sans-serif !important;
   -webkit-font-smoothing: antialiased;
