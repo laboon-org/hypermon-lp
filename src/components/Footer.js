@@ -1,5 +1,6 @@
 import React from "react";
-import iconFooter from "../assets/images/logo_mini.png";
+
+// import iconFooter from "../assets/images/logo_mini.png";
 
 import { ReactComponent as Email } from "../assets/icon/email.svg";
 import { ReactComponent as Fb } from "../assets/icon/fb.svg";
@@ -14,7 +15,7 @@ const Footer = () => {
     >
       <div className="container mx-auto">
         <div className="pt-28">
-          <img className="mx-auto" src={iconFooter} alt="" />
+          {/* <img className="mx-auto" src={iconFooter} alt="" /> */}
         </div>
 
         <div>
