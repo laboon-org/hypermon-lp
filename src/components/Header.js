@@ -9,11 +9,11 @@ import HoverNav from "../assets/images/nav_item_hover.png";
 const Header = () => {
   const [link, setLink] = useState("Home");
   return (
-    <div class="Header mx-auto">
+    <div className="Header mx-auto">
       <div className="Header_container ">
         <div className="flex justify-between ">
           <div>
-            <LogoHypermon />
+            <img src={LogoHypermon} alt="Hypermon Logo" />
           </div>
           <div className="flex Header__link items-center ">
             <div
