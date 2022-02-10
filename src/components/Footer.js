@@ -1,9 +1,11 @@
 import React from "react";
-import iconFooter from "../Assets/logo/LogoFooter.png";
-import { ReactComponent as Email } from "../Assets/icon/email.svg";
-import { ReactComponent as Fb } from "../Assets/icon/Fb.svg";
-import { ReactComponent as Tele } from "../Assets/icon/tele.svg";
-import { ReactComponent as Tw } from "../Assets/icon/Tw.svg";
+import iconFooter from "../assets/images/logo_mini.png";
+
+import { ReactComponent as Email } from "../assets/icon/email.svg";
+import { ReactComponent as Fb } from "../assets/icon/fb.svg";
+import { ReactComponent as Tele } from "../assets/icon/tele.svg";
+import { ReactComponent as Tw } from "../assets/icon/tw.svg";
+
 const Footer = () => {
   return (
     <div
@@ -22,7 +24,7 @@ const Footer = () => {
                 <span className="active">Home</span>
               </div>
               <div>
-                <a href="https://www.hypermon.games/">
+                <a href="https://play.hypermon.games/">
                   <span>GAMEPLAY</span>
                 </a>
               </div>
@@ -48,14 +50,14 @@ const Footer = () => {
           <div>
             <div className="flex items-center email">
               <Email />
-              <span className="pl-4">hypermon@gmail.com</span>
+              <span className="pl-4">hi@laboon.org</span>
             </div>
             <div className="Footer__bottom pt-4">
               <div className="text-center">
-                <span>© All right reserved 2021.</span>
+                <span>© 2022, all right reserved</span>
               </div>
               <div>
-                <span>Hypermon Website Demo by Laboon</span>
+                <span>Developed by Laboon.org</span>
               </div>
             </div>
           </div>

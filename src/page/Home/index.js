@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import Hypermon from "./Hypermon";
-import Header from "../../components/Header";
+
 import OurCharacter from "./OurCharacter";
 import GamePlay from "./GamePlay";
 import GameMap from "./Gamemap";
@@ -10,36 +10,19 @@ import GameGem from "./GameGem";
 import RoadMap from "./Roadmap";
 import OurPartner from "./Ourpartner";
 import Footer from "../../components/Footer";
+
 const HomePage = () => {
   return (
     <div className="">
-      <div>
-        <Hypermon />
-      </div>
-      <div>
-        <OurCharacter />
-      </div>
-      <div>
-        <GamePlay />
-      </div>
-      <div>
-        <GameMap />
-      </div>
-      <div>
-        <GameCoin />
-      </div>
-      <div>
-        <GameGem />
-      </div>
-      <div>
-        <RoadMap />
-      </div>
-      <div>
-        <OurPartner />
-      </div>
-      <div>
-        <Footer />
-      </div>
+      <Hypermon />
+      <OurCharacter />
+      <GamePlay />
+      <GameMap />
+      <GameCoin />
+      <GameGem />
+      <RoadMap />
+      <OurPartner />
+      <Footer />
     </div>
   );
 };

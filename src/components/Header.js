@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./index.scss";
-import { ReactComponent as LogoHypermon } from "../Assets/logo/LogoHypermon.svg";
-import LogoMP from "../Assets/Home/img/circle1.png";
-import HoverNav from "../Assets/Home/img/hoverNav.png";
+
+import LogoHypermon from "../assets/images/logo_large.png";
+
+import LogoMP from "../assets/images/link_marketplace.png";
+import HoverNav from "../assets/images/nav_item_hover.png";
 
 const Header = () => {
-  const [hover, setHover] = useState(false);
   const [link, setLink] = useState("Home");
   return (
     <div class="Header mx-auto">

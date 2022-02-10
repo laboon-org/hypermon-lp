@@ -1,5 +1,6 @@
 import React from "react";
 import "./index.scss";
+
 import GameCoin from "./img/gamecoin.png";
 import vang from "./img/vang.png";
 import line from "./img/Arrow2.png";
