@@ -1,11 +1,11 @@
 import React from "react";
 
-// import iconFooter from "../assets/images/logo_mini.png";
+import iconFooter from "../assets/images/logo_mini.png";
 
-// import { ReactComponent as Email } from "../assets/icon/email.svg";
-// import { ReactComponent as Fb } from "../assets/icon/fb.svg";
-// import { ReactComponent as Tele } from "../assets/icon/tele.svg";
-// import { ReactComponent as Tw } from "../assets/icon/tw.svg";
+import { ReactComponent as IconEmail } from "../assets/icon/email.svg";
+import { ReactComponent as IconFb } from "../assets/icon/fb.svg";
+import { ReactComponent as IconTele } from "../assets/icon/tele.svg";
+import { ReactComponent as IconTw } from "../assets/icon/tw.svg";
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
     >
       <div className="container mx-auto">
         <div className="pt-28">
-          {/* <img className="mx-auto" src={iconFooter} alt="" /> */}
+          <img className="mx-auto" src={iconFooter} alt="" />
         </div>
 
         <div>
@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="Footer__inf flex justify-center">
           <div>
             <div className="flex items-center email">
-              {/* <Email /> */}
+              <IconEmail width="24px" height="24px" />
               <span className="pl-4">hi@laboon.org</span>
             </div>
             <div className="Footer__bottom pt-4">
@@ -66,13 +66,13 @@ const Footer = () => {
         <div className="">
           <div className="flex justify-center pt-8">
             <div>
-              {/* <Fb /> */}
+              <IconFb width="24px" height="24px" />
             </div>
             <div className="px-8">
-              {/* <Tele /> */}
+              <IconTele width="24px" height="24px" />
             </div>
             <div>
-              {/* <Tw /> */}
+              <IconTw width="24px" height="24px" />
             </div>
           </div>
         </div>
