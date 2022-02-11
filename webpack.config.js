@@ -1,4 +1,4 @@
-const path = require('path'); // lấy đường dẫn tuyệt đối của thư mục
+const path = require('path');
 
 const config = {
   mode: "development",

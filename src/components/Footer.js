@@ -1,6 +1,6 @@
 import React from "react";
 
-import iconFooter from "./../assets/images/logo_mini.png";
+import iconFooter from "./../assets/images/logo_mini2.png";
 
 import { ReactComponent as IconEmail } from "../assets/icon/email.svg";
 import { ReactComponent as IconFb } from "../assets/icon/fb.svg";
