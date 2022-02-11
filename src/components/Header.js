@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./index.scss";
 
-import LogoMP from "../assets/images/link_marketplace.png";
-import HoverNav from "../assets/images/nav_item_hover.png";
+import LogoMP from "./../assets/images/link_marketplace.png";
+import HoverNav from "./../assets/images/nav_item_hover.png";
 
-import LogoHypermon from "../assets/images/logo_large.png";
+import LogoHypermon from "./../assets/images/logo_large.png";
 
 const Header = () => {
   const [link, setLink] = useState("Home");
