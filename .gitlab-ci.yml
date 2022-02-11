@@ -55,6 +55,9 @@ deploy-job:      # This job runs in the deploy stage.
     - echo "Deploying application..."
     - echo "Application successfully deployed."
     - mv build public
+    - mkdir .public
+    - cp -r * .public
+    - mv .public public
   only:
     - main
   artifacts:
