@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./index.scss";
-
+import "./mobile.scss"
 import LogoHypermon from "../assets/images/logo_large.png";
-
 import LogoMP from "../assets/images/link_marketplace.png";
 import HoverNav from "../assets/images/nav_item_hover.png";
 
@@ -11,8 +10,8 @@ const Header = () => {
   return (
     <div className="Header mx-auto">
       <div className="Header_container ">
-        <div className="flex justify-between ">
-          <div>
+        <div className="flex justify-between mb-wrapper-header">
+          <div className="mb-logo-Header">
             <img src={LogoHypermon} alt="Hypermon Logo" />
           </div>
           <div className="flex Header__link items-center ">
@@ -108,7 +107,8 @@ const Header = () => {
               />
               <span>PARTNER</span>
             </div>
-            <img src={LogoMP} alt="" />
+            <img src={LogoMP} className="mb-img-header" alt="" />
+
           </div>
         </div>
       </div>

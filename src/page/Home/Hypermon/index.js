@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-
+import "./mobile.scss"
 import bg from "./img/bg.png";
 import Banner from "./img/name.png";
 import totalPlayer from "./img/Totalplayer.png";
@@ -17,18 +17,18 @@ const Hypermon = () => {
       <div className="container mx-auto ">
         <div className="Hypermon__container">
           <div className="text-center flex">
-            <img src={Banner} alt="" className="mx-auto" />
+            <img src={Banner} alt="" className="mx-auto mb-logo-GameCoin" />
           </div>
-          <div style={{ marginTop: -20 }} className="Hypermon_text mx-auto">
+          <div className="Hypermon_text mx-auto">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris.
             </p>
           </div>
-          <div className="Hypermon_text--bottom mt-8 mx-auto pb-16">
-            <div className="flex justify-around items-center">
-              <div className="flex items-center">
+          <div className="Hypermon_text--bottom mt-8 mx-auto pb-16 mb-content-GameCoin">
+            <div className="flex justify-around items-center mb-wrap-content-GameCoin">
+              <div className="flex items-center mb-player-GameCoin">
                 <img src={number} alt="" />
                 <img src={totalPlayer} alt="" />
               </div>
