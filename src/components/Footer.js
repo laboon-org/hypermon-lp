@@ -3,9 +3,10 @@ import React from "react";
 import iconFooter from "./../_assets/images/logo_mini2.png";
 
 import { ReactComponent as IconEmail } from "../_assets/icon/email.svg";
-import { ReactComponent as IconFb } from "../_assets/icon/fb.svg";
+
+import { ReactComponent as IconFb } from "../_assets/icon/Fb.svg";
 import { ReactComponent as IconTele } from "../_assets/icon/tele.svg";
-import { ReactComponent as IconTw } from "../_assets/icon/tw.svg";
+import { ReactComponent as IconTw } from "../_assets/icon/Tw.svg";
 
 const Footer = () => {
   return (
