@@ -5,6 +5,8 @@
   .Gameplay__container--wrapper {
     padding-top: 200px;
     padding-bottom: 200px;
+    position: relative;
+    z-index: 10;
   }
   .Gameplay_content {
     width: 561px;
