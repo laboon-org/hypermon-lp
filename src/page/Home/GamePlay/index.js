@@ -8,7 +8,7 @@ import play from "./img/play.png";
 import Squitle32 from "./img/Squitle32.png";
 import Caterpie1a2 from "./img/Caterpie1a2.png";
 import Chuong1 from "./img/chuong1.png";
-
+import "./mobile.scss"
 const GamePlay = () => {
   return (
     <div
@@ -37,10 +37,10 @@ const GamePlay = () => {
         <div className="container mx-auto Gameplay__container ">
           <div>
             <div>
-              <img className="mx-auto" src={gameplay} alt="" />
+              <img className="mx-auto mb-header-gameplay" src={gameplay} alt="" />
             </div>
             <div className="mt-8 flex  Gameplay__container--wrapper">
-              <div className="flex-1">
+              <div className="flex-1 mb-description-gameplay">
                 <div>
                   <img className="mx-auto" src={title} alt="" />
                 </div>
@@ -55,7 +55,7 @@ const GamePlay = () => {
                     ratione voluptatem sequi nesciunt.{" "}
                   </p>
                 </div>
-                <div className="pt-16">
+                <div className="pt-16 mb-play-icon">
                   <img className="mx-auto" src={play} alt="" />
                 </div>
               </div>
