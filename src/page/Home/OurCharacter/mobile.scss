@@ -1,0 +1,89 @@
+// small desktop responsive
+@media (max-width: 1400px) {
+    .Ourcharacter {
+        .name-character {
+            top: 16%;
+        }
+    }
+}
+// tablet responsive
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .Ourcharacter {
+        .mb-name-Ourcharacter {
+            width: 50%;
+        }
+        .name-character {
+            font-size: 14px;
+            top: 16%;
+        }
+        .Charmande1 {
+            margin-top: -20%;
+            .character-properties {
+                right: 16%;
+            }
+        }
+    }
+}
+
+// small responsive
+@media (max-width: 767.98px) {
+    .Ourcharacter {
+        .mb-name-Ourcharacter {
+            width: 30%;
+        }
+        .name-character {
+            font-size: 12px;
+            top: 13%;
+        }
+        .Charmande1 {
+            .character-properties {
+                right: 13%;
+                li {
+                    font-size: 11px;
+                    span {
+                        font-size: 31px;
+                        margin-left: -3px;
+                    }
+                }
+            }
+        }
+        .Ourcharacter_description {
+            span {
+                &:first-child {
+                    // font-size: 9px !important;
+                    width: 80% !important;
+                }
+            }
+        }
+    }
+}
+// small mobile responsive
+@media (max-width: 450px) {
+    .Ourcharacter {
+        .name-character {
+            font-size: 8px;
+            top: 13%;
+        }
+        .Charmande1 {
+            .character-properties {
+                li {
+                    font-size: 9px;
+                    span {
+                        font-size: 29px;
+                    }
+                }
+            }
+        }
+        .Ourcharacter_description {
+            span {
+                &:first-child {
+                    font-size: 9px !important;
+                    width: 80% !important;
+                }
+                &:last-child{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
