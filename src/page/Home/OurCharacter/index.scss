@@ -6,24 +6,93 @@
   .container-full {
     width: 100%;
   }
+  .name-character {
+    font-family: "CAMPUS PERSONAL";
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 20px;
+    color: aliceblue;
+  }
   .Ourcharacter__item {
-    padding-top: 206px;
+    // padding-top: 206px;
+    padding-top: 12%;
+    .start-img {
+      padding: 0 11%;
+    }
+    .wrapper-star{
+      margin-top: -5%;
+    }
   }
 
   .Charmande1 {
-    margin-top: -216px;
+    margin-top: -17%;
+    position: relative;
     .vector {
-      left: 336px;
-      top: 214px;
-      z-index: 0;
+      // left: 336px;
+      // top: 214px;
+      // z-index: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 46%;
+      mix-blend-mode: color-dodge;
+      opacity: 0.5;
+    }
+    .character-properties {
+      font-family: "CAMPUS PERSONAL";
+      position: absolute;
+      bottom: 3%;
+      right: 16%;
+      list-style-type:none;
+      li{
+        font-size: 15px;
+        background: linear-gradient(180deg, #EE9559 0%, #F5E47E 50%, #F3C17C 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        // special DOT
+        span{
+          display: block;
+          font-size: 35px;
+          zoom: 1.4;
+          height: 22px;
+          margin-top: -22px;
+          margin-left: -4px;
+        }
+      }
     }
     .Charmande__img {
       z-index: 2;
+      width: 39%;
     }
     .fire__img {
       z-index: 2;
-      margin-left: 101px;
-      margin-top: -100px;
+      margin-left: 16%;
+      margin-top: -7.7%;
+      width: 7%;
+    }
+  }
+  .Ourcharacter_description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "G.I. Incognito";
+    color: #fff;
+    padding: 6% 0 8%;
+    span{
+      &:first-child{
+        width: 658px;
+        text-align: center;
+        font-size: 13px;
+      }
+     &:last-child{
+      background: linear-gradient(0deg, #00ADEB -1.73%, #006BED 96.03%);
+      font-size: 40px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+     }
     }
   }
 }
