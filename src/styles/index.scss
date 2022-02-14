@@ -5,19 +5,22 @@
 @font-face {
   font-family: "G.I. Incognito";
   src: local("G.I. Incognito"),
-    url(./assets/fonts/gi_incognito.ttf) format("truetype");
+    url(../_assets/fonts/gi_incognito.ttf) format("truetype");
 }
 @font-face {
   font-family: "UTM Alter Gothic";
   src: local("UTM Alter Gothic"),
-    url(./assets/fonts/utm_alter_gothic.ttf) format("truetype");
+    url(../_assets/fonts/utm_alter_gothic.ttf) format("truetype");
 }
 @font-face {
   font-family: 'CAMPUS PERSONAL';
-  src: URL('./assets/fonts/campus.ttf') format('truetype');
+  src: URL('../_assets/fonts/campus.ttf') format('truetype');
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import './fonts.scss';
+
+@import './tailwind.scss';
 
 body {
   font-family: "Inter", sans-serif !important;
