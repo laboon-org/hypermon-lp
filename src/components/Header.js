@@ -5,15 +5,16 @@ import LogoMP from "./../_assets/images/link_marketplace.png";
 import HoverNav from "./../_assets/images/nav_item_hover.png";
 
 import LogoHypermon from "./../_assets/images/logo_large.png";
-
+import "./mobile.scss"
 const Header = () => {
   const [link, setLink] = useState("Home");
   return (
-    <div className="Header mx-auto">
+    <div class="Header mx-auto">
       <div className="Header_container ">
-        <div className="flex justify-between ">
-          <div>
-            <img src={LogoHypermon} alt="Hypermon Logo" />
+        <div className="flex justify-between mb-wrapper-header">
+          <div className="mb-logo-Header">
+            <img src={LogoHypermon} alt=""/>
+            {/* <LogoHypermon /> */}
           </div>
           <div className="flex Header__link items-center ">
             <div
@@ -108,7 +109,7 @@ const Header = () => {
               />
               <span>PARTNER</span>
             </div>
-            <img src={LogoMP} alt="" />
+            <img src={LogoMP} className="mb-img-header" alt="" />
           </div>
         </div>
       </div>
