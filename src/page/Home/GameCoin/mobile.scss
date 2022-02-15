@@ -4,7 +4,7 @@
         .mb-nameheader {
             width: 36%;
         }
-        .GameCoin__content{
+        .GameCoin__content {
             width: 80% !important;
         }
         .Gamecoin__text {
@@ -14,23 +14,23 @@
             right: -59%;
             width: 36%;
             top: 32%;
+            &:last-child {
+                .pt-10 {
+                    img {
+                        width: 188px;
+                        max-width: unset;
+                    }
+                }
+            }
+        }
+        .Gamecoin_exchange {
+            left: 20px;
         }
         .mb-wrapper-imgcenter {
             .eggs,
             .bgafter,
             .dot-start {
                 top: 66% !important;
-            }
-        }
-        .mb-feature-left{
-            .Gamecoin_exchange {
-                left: 20px;
-                width: 80px;
-                &:last-child{
-                    .pt-10{
-                        width: 60px;
-                    }
-                }
             }
         }
     }
@@ -43,8 +43,19 @@
             font-size: 13px;
             line-height: 18px;
         }
-        .Gamecoin__free{
+        .Gamecoin__free {
             top: 42%;
+        }
+        .mb-feature-left {
+            .Gamecoin_exchange {
+                left: 20px;
+                width: 80px;
+                &:last-child {
+                    .pt-10 {
+                        width: 60px;
+                    }
+                }
+            }
         }
     }
 }
