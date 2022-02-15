@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-
+import "./mobile.scss"
 import GameCoin from "./img/gamecoin.png";
 import vang from "./img/vang.png";
 import line from "./img/Arrow2.png";
@@ -21,7 +21,7 @@ const index = () => {
       <div className="container mx-auto pt-20">
         <div className="relative z-10">
           <div>
-            <img className="mx-auto" src={GameCoin} alt="" />
+            <img className="mx-auto mb-nameheader" src={GameCoin} alt="" />
           </div>
           <div className="GameCoin__content mx-auto mt-10">
             <p>
@@ -34,7 +34,7 @@ const index = () => {
 
         <div>
           <div className="flex justify-around relative">
-            <div>
+            <div className="mb-feature-left">
               <div className="Gamecoin_exchange relative z-10">
                 <img className="pl-8" src={vang} alt="" />
                 <div className="relative">
@@ -64,17 +64,24 @@ const index = () => {
               </div>
             </div>
             <div className="flex-1">
-              <div>
+              <div className="mb-wrapper-imgcenter">
                 <img className="absolute bgafter" src={bgafter} alt="" />
                 <img
-                  style={{ left: 178 }}
-                  className="absolute z-10"
+                  style={{
+                    left: "50%",
+                    transform: "translateX(-50%)"
+                  }}
+                  className="absolute z-10 eggs"
                   src={coin}
                   alt=""
                 />
                 <img
-                  style={{ top: 130, left: 270 }}
-                  className="absolute z-10"
+                  style={{
+                    top: 130,
+                    left: "50%",
+                    transform: "translateX(-50%)"
+                  }}
+                  className="absolute z-10 dot-start"
                   src={bgCoint}
                   alt=""
                 />
