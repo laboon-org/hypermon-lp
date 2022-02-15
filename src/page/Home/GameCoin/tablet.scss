@@ -1,0 +1,31 @@
+// tablet responsive
+@media (max-width: 1023.98px) {
+    .GameCoin {
+        .mb-wrapper-imgcenter {
+            .eggs {
+                width: 50%;
+                top: 35%;
+            }
+            .bgafter {
+                top: 10%;
+            }
+            .dot-start {
+                width: 58%;
+            }
+        }
+        .mb-feature-left {
+            width: 29%;
+        }
+
+        .Gamecoin__free {
+            top: 34%;
+            right: 5%;
+            width: 80%;
+        }
+        .Gamecoin__text {
+            right: 25%;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
