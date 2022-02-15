@@ -1,0 +1,28 @@
+// small device responsive
+@media (max-width: 767.98px) {
+    .Gamegem {
+        .mb-nameheader {
+            width: 36%;
+        }
+        .Gamegem__content {
+            width: 80%;
+        }
+        .wrapper-imgcenter {
+            img {
+                width: 63%;
+                top: 11%;
+            }
+        }
+    }
+}
+// special mobile responsive
+@media (max-width: 450px) {
+    .Gamegem {
+        
+        .wrapper-imgcenter {
+            img {
+                top: 20%;
+            }
+        }
+    }
+}
