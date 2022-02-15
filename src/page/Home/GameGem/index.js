@@ -15,13 +15,14 @@ import goldBText from "./img/Evolvehypermon.png";
 import staking from "./img/staking.png";
 import klipartz from "./img/klipartz11.png";
 import klipartz12 from "./img/klipartz12.png";
-
+import "./mobile.scss"
+import "./tablet.scss"
 const index = () => {
   return (
     <div className="Gamegem mx-auto" style={{ backgroundColor: "#051435" }}>
       <div className="container mx-auto pt-20 ">
         <div>
-          <img className="mx-auto" src={gamegem} alt="" />
+          <img className="mx-auto mb-nameheader" src={gamegem} alt="" />
         </div>
         <div className="Gamegem__content mx-auto mt-10">
           <p>
@@ -32,8 +33,8 @@ const index = () => {
         </div>
         <div className="mt-28">
           <div className="flex justify-around relative">
-            <div>
-              <div className="Gamecoin_exchange relative">
+            <div className="mb-padding-left">
+              <div className="Gamegem_exchange relative">
                 <img className="pl-8" src={item1} alt="" />
                 <div className="relative">
                   <img
@@ -47,7 +48,7 @@ const index = () => {
                 <img className="pt-10" src={exchange} alt="" />
               </div>
 
-              <div className="Gamecoin_exchange relative pt-28">
+              <div className="Gamegem_exchange relative pt-28">
                 <img className="pl-8" src={item2} alt="" />
                 <div className="relative">
                   <img
@@ -61,30 +62,30 @@ const index = () => {
                 <img className="pt-10" src={trade} alt="" />
               </div>
             </div>
-            <div className="flex-1">
-              <div>
+            <div
+              className="flex-1"
+              style={{ zIndex: 11 }}
+            >
+              <div className="wrapper-imgcenter">
                 <img
-                  style={{ left: 138 }}
                   className="absolute z-10"
                   src={gem41}
                   alt=""
                 />
                 <img
-                  style={{ top: 72, left: 198 }}
                   className="absolute"
                   src={klipartz12}
                   alt=""
                 />
                 <img
-                  style={{ top: -41, left: 110 }}
                   className="absolute"
                   src={klipartz}
                   alt=""
                 />
               </div>
             </div>
-            <div>
-              <div className="Gamecoin__free relative">
+            <div className="mb-padding-right">
+              <div className="Gamegem__free relative">
                 <div className="flex justify-end pr-8">
                   <img src={item3} alt="" />
                 </div>
@@ -99,11 +100,11 @@ const index = () => {
                     <img className="relative" src={line1} alt="" />
                   </div>
                 </div>
-                <div className="flex justify-end pt-10">
+                <div className="flex justify-end pt-10 mb-firstname-right">
                   <img src={goldBText} alt="" />
                 </div>
               </div>
-              <div className="Gamecoin__free relative pt-20">
+              <div className="Gamegem__free relative pt-20">
                 <div className="flex justify-end pr-8">
                   <img src={item4} alt="" />
                 </div>
@@ -118,7 +119,7 @@ const index = () => {
                     <img className="relative" src={line1} alt="" />
                   </div>
                 </div>
-                <div className="flex justify-end pt-10">
+                <div className="flex justify-end pt-10 mb-secondname-right">
                   <img src={staking} alt="" />
                 </div>
               </div>
