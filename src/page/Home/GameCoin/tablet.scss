@@ -1,6 +1,7 @@
 // tablet responsive
 @media (max-width: 1023.98px) {
     .GameCoin {
+        padding-bottom: 170px;
         .mb-wrapper-imgcenter {
             .eggs {
                 width: 50%;
@@ -27,5 +28,10 @@
             font-size: 20px;
             line-height: 30px;
         }
+    }
+}
+@media (min-width: 550px) and (max-width: 767px) {
+    .GameCoin {
+        padding-bottom: 279px !important;
     }
 }
