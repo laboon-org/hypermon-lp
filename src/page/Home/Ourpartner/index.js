@@ -7,6 +7,8 @@ import item2 from "./img/item2.png";
 import item3 from "./img/item3.png";
 import item4 from "./img/item4.png";
 import item5 from "./img/item5.png";
+import "./tablet.scss"
+import "./mobile.scss"
 const index = () => {
   return (
     <div
@@ -18,9 +20,9 @@ const index = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="container mx-auto pt-20 " style={{ paddingTop: 400 }}>
+      <div className="container mx-auto pt-20">
         <div>
-          <img className="mx-auto" src={ourpartner} alt="" />
+          <img className="mx-auto mb-headername" src={ourpartner} alt="" />
         </div>
         <div className="Ourpartner__content mx-auto mt-10">
           <p>
@@ -30,7 +32,7 @@ const index = () => {
           </p>
         </div>
         <div className="pt-16 pb-16">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center wrapper-img">
             <div>
               <img src={item1} alt="" />
             </div>

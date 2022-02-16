@@ -1,0 +1,37 @@
+// mobile size responsive
+@media (max-width: 767.98px) {
+    .Ourpartner {
+        .Ourpartner__content {
+            width: 80%;
+        }
+        .mb-headername {
+            width: 36%;
+        }
+        .wrapper-img {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            div {
+                padding: 0 5%;
+                min-width: 200px;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+// special for mobile size responsive
+@media (max-width: 450px) {
+    .Ourpartner {
+        .wrapper-img {
+            div {
+                min-width: unset;
+                img {
+                    width: 106px;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
