@@ -6,6 +6,7 @@ import Banner from "./img/name.png";
 import totalPlayer from "./img/Totalplayer.png";
 import number from "./img/1.670.890.png";
 import Header from "../../../components/Header";
+import "./tablet.scss"
 
 const Hypermon = () => {
   return (

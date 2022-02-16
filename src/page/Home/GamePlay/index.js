@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.scss";
-
 import bg from "./img/bg.png";
 import gameplay from "./img/gameplay.png";
 import title from "./img/title.png";
@@ -9,6 +8,7 @@ import Squitle32 from "./img/Squitle32.png";
 import Caterpie1a2 from "./img/Caterpie1a2.png";
 import Chuong1 from "./img/chuong1.png";
 import "./mobile.scss"
+import "./tablet.scss"
 const GamePlay = () => {
   return (
     <div
