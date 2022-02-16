@@ -7,6 +7,29 @@
             }
         }
     }
+    .Footer {
+        height: 512px !important;
+        .pt-28{
+            padding-top: 2rem;
+        }
+        .pt-24{
+            padding-top: 6%;
+        }
+        .Footer__inf{
+            padding-top: 40px;
+        }
+        .wrapper-nav {
+            flex-wrap: wrap;
+
+            div {
+                width: 100px !important;
+                display: flex;
+                justify-content: center;
+                * {
+                }
+            }
+        }
+    }
 }
 @media (max-width: 767.98px) {
     .Header {
@@ -19,12 +42,12 @@
                 display: flex;
                 justify-content: center;
                 width: 100%;
-                img:first-child{
+                img:first-child {
                     padding-bottom: 4%;
                 }
             }
         }
-        .Header__link .link{
+        .Header__link .link {
             align-self: flex-start;
         }
     }

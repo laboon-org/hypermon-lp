@@ -69,6 +69,18 @@
 }
 .Footer {
   .Footer__nav {
+    .wrapper-nav {
+      flex-wrap: wrap;
+
+      div {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        * {
+          padding-top: 10px;
+        }
+      }
+    }
     span {
       cursor: pointer;
 
@@ -81,7 +93,7 @@
 
       letter-spacing: 0.05em;
       color: white;
-      padding: 0 40px;
+      // padding: 0 40px;
       &:hover {
         color: yellow;
       }
