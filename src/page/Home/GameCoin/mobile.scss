@@ -1,61 +1,86 @@
 // small device responsive
 @media (max-width: 767.98px) {
-    .GameCoin {
-        .mb-nameheader {
-            width: 36%;
-        }
-        .GameCoin__content {
-            width: 80% !important;
-        }
-        .Gamecoin__text {
-            right: 20px;
-        }
-        .Gamecoin__free {
-            right: -59%;
-            width: 36%;
-            top: 32%;
-            &:last-child {
-                .pt-10 {
-                    img {
-                        width: 188px;
-                        max-width: unset;
-                    }
-                }
-            }
-        }
-        .Gamecoin_exchange {
-            left: 20px;
-        }
-        .mb-wrapper-imgcenter {
-            .eggs,
-            .bgafter,
-            .dot-start {
-                top: 66% !important;
-            }
-        }
+  .GameCoin {
+    .mb-nameheader {
+      width: 36%;
     }
+    .GameCoin__content {
+      width: 80% !important;
+    }
+    .Gamecoin__text {
+      right: 20px;
+    }
+    .Gamecoin__free {
+      right: -59%;
+      width: 36%;
+      top: 32%;
+      &:last-child {
+        .pt-10 {
+          img {
+            width: 188px;
+            max-width: unset;
+          }
+        }
+      }
+    }
+    .Gamecoin_exchange {
+      left: 20px;
+    }
+    .mb-wrapper-imgcenter {
+      .eggs,
+      .bgafter,
+      .dot-start {
+        top: 47% !important;
+      }
+    }
+    .mb-feature-left {
+      .Gamecoin_exchange {
+        left: 20px;
+        width: 80px;
+        &:last-child {
+          .pt-10 {
+            width: 60px;
+          }
+        }
+      }
+    }
+    .mb-feature-left {
+      .Gamecoin_exchange {
+        left: 9vw;
+        width: 80px;
+      }
+    }
+  }
 }
 // special mobile responsive
 @media (max-width: 450px) {
-    .GameCoin {
-        .Gamecoin__text {
-            right: 4%;
-            font-size: 13px;
-            line-height: 18px;
-        }
-        .Gamecoin__free {
-            top: 42%;
-        }
-        .mb-feature-left {
-            .Gamecoin_exchange {
-                left: 20px;
-                width: 80px;
-                &:last-child {
-                    .pt-10 {
-                        width: 60px;
-                    }
-                }
-            }
-        }
+  .GameCoin {
+    .Gamecoin__text {
+      top: 221px;
+      right: 4%;
+      font-size: 13px;
+      line-height: 18px;
     }
+    .Gamecoin__free {
+      top: 42%;
+      right: -57%;
+    }
+    .mb-wrapper-imgcenter {
+      .eggs {
+        width: 65%;
+      }
+    }
+    .mb-feature-left {
+      .Gamecoin_exchange {
+        left: 6vw;
+      }
+    }
+    .mb-wrapper-imgcenter {
+      .eggs,
+      .bgafter,
+      .dot-start {
+        top: 59% !important;
+      }
+    }
+  }
 }

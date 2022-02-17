@@ -1,54 +1,60 @@
-@media (max-width: 1023.98px) {
-    .Header_container {
-        .Header__link {
-            flex-wrap: wrap;
-            .mb-img-header {
-                margin-left: auto;
-            }
-        }
+@media (max-width: 1200.98px) {
+  .Header_container {
+    .Header__link {
+      flex-wrap: wrap;
+      .link {
+        padding: 12px 29px 0 !important;
+      }
+      .mb-img-header {
+        margin-left: auto;
+      }
+      div:last-child {
+        width: 100%;
+      }
     }
-    .Footer {
-        height: 512px !important;
-        .pt-28{
-            padding-top: 2rem;
-        }
-        .pt-24{
-            padding-top: 6%;
-        }
-        .Footer__inf{
-            padding-top: 40px;
-        }
-        .wrapper-nav {
-            flex-wrap: wrap;
+  }
+  .Footer {
+    height: 512px !important;
+    .pt-28 {
+      padding-top: 2rem;
+    }
+    .pt-24 {
+      padding-top: 6%;
+    }
+    .Footer__inf {
+      padding-top: 40px;
+    }
+    .wrapper-nav {
+      flex-wrap: wrap;
 
-            div {
-                width: 100px !important;
-                display: flex;
-                justify-content: center;
-                * {
-                }
-            }
+      div {
+        width: 100px !important;
+        display: flex;
+        justify-content: center;
+        * {
         }
+      }
     }
+  }
 }
 @media (max-width: 767.98px) {
-    .Header {
-        padding-top: 5%;
-        .Header_container {
-            .mb-wrapper-header {
-                flex-wrap: wrap;
-            }
-            .mb-logo-Header {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-                img:first-child {
-                    padding-bottom: 4%;
-                }
-            }
+  .Header {
+    padding-top: 5%;
+    .Header_container {
+      .mb-wrapper-header {
+        flex-wrap: wrap;
+      }
+      .mb-logo-Header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        img:first-child {
+          padding-bottom: 4%;
         }
-        .Header__link .link {
-            align-self: flex-start;
-        }
+      }
     }
+    .Header__link {
+      align-self: flex-start;
+    }
+  }
 }
