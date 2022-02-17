@@ -1,1 +1,4 @@
-
+// disable iframe tag from tailwind library
+iframe {
+  display: none !important;
+}
