@@ -1,26 +1,26 @@
 // small desktop responsive
 @media (max-width: 1400px) {
-    .Ourcharacter {
-        .name-character {
-            top: 16%;
-        }
+  .Ourcharacter {
+    .name-character {
+      top: 16%;
     }
+  }
 }
 // tablet responsive
 @media (min-width: 768px) and (max-width: 1023.98px) {
-    .Ourcharacter {
-        .mb-name-Ourcharacter {
-            width: 50%;
-        }
-        .name-character {
-            font-size: 14px;
-            top: 16%;
-        }
-        .Charmande1 {
-            margin-top: -20%;
-            .character-properties {
-                right: 16%;
-            }
-        }
+  .Ourcharacter {
+    .mb-name-Ourcharacter {
+      width: 50%;
     }
+    .name-character {
+      font-size: 14px;
+      top: 16%;
+    }
+    .Charmande1 {
+      margin-top: -20%;
+      .character-properties {
+        right: 16%;
+      }
+    }
+  }
 }

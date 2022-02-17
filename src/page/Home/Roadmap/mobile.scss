@@ -1,30 +1,29 @@
 // tablet responsive
 @media (max-width: 767.98px) {
-    .Roadmap {
-        .header-name{
-            width: 36%;
-        }
-        .Roadmap__content{
-            width: 80%;
-        }
-        .wrapper-text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            div{
-                width: 66%;
-            }
-        }
+  .Roadmap {
+    .header-name {
+      width: 36%;
     }
+    .Roadmap__content {
+      width: 80%;
+    }
+    .wrapper-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div {
+        width: 66%;
+      }
+    }
+  }
 }
 // special for mobile size responsive
 @media (max-width: 550px) {
-    .Roadmap {
-        .wrapper-text {
-            
-            div{
-                width: 90%;
-            }
-        }
+  .Roadmap {
+    .wrapper-text {
+      div {
+        width: 90%;
+      }
     }
+  }
 }

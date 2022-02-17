@@ -1,65 +1,65 @@
 // tablet responsive
 @media (max-width: 1023.98px) {
-    .Gamegem {
-        padding-bottom: unset !important;
-        .mb-padding-right,
-        .mb-padding-left {
-            padding-top: unset !important;
-        }
-        .wrapper-imgcenter {
-            img {
-                width: 50%;
-            }
-        }
-        .mb-padding-left {
-            padding-left: 10%;
-        }
-        .mb-padding-right {
-            padding-right: 10%;
-        }
-        .Gamegem_exchange {
-            &:first-child {
-                top: unset !important;
-                .pt-10 {
-                    width: 32%;
-                }
-            }
-            div:nth-child(2) {
-                img:last-child {
-                    width: 58%;
-                }
-            }
-            &:last-child {
-                top: -38px;
-                .pt-10 {
-                    width: 23%;
-                }
-            }
-        }
-        .Gamegem__free {
-            &:first-child {
-                top: -6px;
-            }
-            div:nth-child(2) {
-                img:last-child {
-                    position: absolute;
-                    width: 26vw;
-                    right: 0;
-                }
-            }
-            .mb-firstname-right {
-                img {
-                    width: 66%;
-                }
-            }
-            .mb-secondname-right {
-                img {
-                    width: 32%;
-                }
-            }
-            &:last-child {
-                top: -42px;
-            }
-        }
+  .Gamegem {
+    padding-bottom: unset !important;
+    .mb-padding-right,
+    .mb-padding-left {
+      padding-top: unset !important;
     }
+    .wrapper-imgcenter {
+      img {
+        width: 50%;
+      }
+    }
+    .mb-padding-left {
+      padding-left: 10%;
+    }
+    .mb-padding-right {
+      padding-right: 10%;
+    }
+    .Gamegem_exchange {
+      &:first-child {
+        top: unset !important;
+        .pt-10 {
+          width: 32%;
+        }
+      }
+      div:nth-child(2) {
+        img:last-child {
+          width: 58%;
+        }
+      }
+      &:last-child {
+        top: -38px;
+        .pt-10 {
+          width: 23%;
+        }
+      }
+    }
+    .Gamegem__free {
+      &:first-child {
+        top: -6px;
+      }
+      div:nth-child(2) {
+        img:last-child {
+          position: absolute;
+          width: 26vw;
+          right: 0;
+        }
+      }
+      .mb-firstname-right {
+        img {
+          width: 66%;
+        }
+      }
+      .mb-secondname-right {
+        img {
+          width: 32%;
+        }
+      }
+      &:last-child {
+        top: -42px;
+      }
+    }
+  }
 }

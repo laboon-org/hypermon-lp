@@ -1,16 +1,16 @@
 // mobile responsive
 @media (max-width: 767.98px) {
-    .Hypermon {
-        .Hypermon__container {
-            padding-top: 30vh;
-        }
-        .Hypermon__container {
-            .mb-logo-GameCoin,
-            .Hypermon_text {
-                width: 80% !important;
-                height: unset;
-                margin-top: unset;
-            }
-        }
+  .Hypermon {
+    .Hypermon__container {
+      padding-top: 30vh;
     }
+    .Hypermon__container {
+      .mb-logo-GameCoin,
+      .Hypermon_text {
+        width: 80% !important;
+        height: unset;
+        margin-top: unset;
+      }
+    }
+  }
 }

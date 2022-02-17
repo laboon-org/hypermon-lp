@@ -1,27 +1,27 @@
 // small device responsive
 @media (max-width: 1023.98px) {
-    .Hypermon {
-        .mb-wrap-content-GameCoin {
-            flex-wrap: wrap;
-            .mb-player-GameCoin {
-                width: 100%;
-                justify-content: center;
-                img:first-child {
-                    padding: 1% 2% 2% 2%;
-                }
-            }
+  .Hypermon {
+    .mb-wrap-content-GameCoin {
+      flex-wrap: wrap;
+      .mb-player-GameCoin {
+        width: 100%;
+        justify-content: center;
+        img:first-child {
+          padding: 1% 2% 2% 2%;
         }
+      }
     }
+  }
 }
 // tablet responsive
 @media (min-width: 768px) and (max-width: 1023.98px) {
-    .Hypermon {
-        .Hypermon__container {
-            padding-top: 38vh;
-        }
-        .mb-logo-GameCoin,
-        .Hypermon_text {
-            width: 60%;
-        }
+  .Hypermon {
+    .Hypermon__container {
+      padding-top: 38vh;
     }
+    .mb-logo-GameCoin,
+    .Hypermon_text {
+      width: 60%;
+    }
+  }
 }
