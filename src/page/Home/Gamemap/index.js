@@ -6,7 +6,7 @@ import "./mobile.scss"
 const index = () => {
   return (
     <div className="Gamemap mx-auto" style={{ backgroundColor: "#051435" }}>
-      <div className="container mx-auto pt-20">
+      <div className="mx-auto pt-20">
         <div>
           <img className="mx-auto mb-header-gamemap" src={GameMap} alt="" />
         </div>
@@ -21,7 +21,7 @@ const index = () => {
           </div>
         </div>
         <div>
-          <div className="mt-20">
+          <div className="mt-20 main-img-content">
             <img src={Map} alt="" />
           </div>
         </div>

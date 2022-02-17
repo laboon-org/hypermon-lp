@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import "./index.scss";
-
 import LogoMP from "./../_assets/images/link_marketplace.png";
 import HoverNav from "./../_assets/images/nav_item_hover.png";
-
 import LogoHypermon from "./../_assets/images/logo_large.png";
 import "./mobile.scss"
+
 const Header = () => {
   const [link, setLink] = useState("Home");
   return (
@@ -13,7 +12,7 @@ const Header = () => {
       <div className="Header_container ">
         <div className="flex justify-between mb-wrapper-header">
           <div className="mb-logo-Header">
-            <img src={LogoHypermon} alt=""/>
+            <img src={LogoHypermon} alt="" />
             {/* <LogoHypermon /> */}
           </div>
           <div className="flex Header__link items-center ">
@@ -30,9 +29,8 @@ const Header = () => {
             </div>
             <div
               onClick={() => setLink("GAMEPLAY")}
-              className={`link relative z-10 ${
-                link === "GAMEPLAY" ? "active" : ""
-              }`}
+              className={`link relative z-10 ${link === "GAMEPLAY" ? "active" : ""
+                }`}
             >
               <img
                 src={HoverNav}
@@ -44,9 +42,8 @@ const Header = () => {
 
             <div
               onClick={() => setLink("NFTSITEM")}
-              className={`link relative z-10 ${
-                link === "NFTSITEM" ? "active" : ""
-              }`}
+              className={`link relative z-10 ${link === "NFTSITEM" ? "active" : ""
+                }`}
             >
               <img
                 src={HoverNav}
@@ -58,9 +55,8 @@ const Header = () => {
 
             <div
               onClick={() => setLink("COIN")}
-              className={`link relative z-10 ${
-                link === "COIN" ? "active" : ""
-              }`}
+              className={`link relative z-10 ${link === "COIN" ? "active" : ""
+                }`}
             >
               <img
                 src={HoverNav}
@@ -84,9 +80,8 @@ const Header = () => {
 
             <div
               onClick={() => setLink("ROADMAP")}
-              className={`link relative z-10 ${
-                link === "ROADMAP" ? "active" : ""
-              }`}
+              className={`link relative z-10 ${link === "ROADMAP" ? "active" : ""
+                }`}
             >
               <img
                 src={HoverNav}
@@ -98,9 +93,8 @@ const Header = () => {
 
             <div
               onClick={() => setLink("PARTNER")}
-              className={`link relative z-10 ${
-                link === "PARTNER" ? "active" : ""
-              }`}
+              className={`link relative z-10 ${link === "PARTNER" ? "active" : ""
+                }`}
             >
               <img
                 src={HoverNav}
@@ -109,7 +103,9 @@ const Header = () => {
               />
               <span>PARTNER</span>
             </div>
-            <img src={LogoMP} className="mb-img-header" alt="" />
+            <div>
+              <img src={LogoMP} className="mb-img-header" alt="" />
+            </div>
           </div>
         </div>
       </div>
