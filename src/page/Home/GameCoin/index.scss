@@ -1,6 +1,6 @@
 .GameCoin {
   padding-bottom: 350px;
-
+  
   .container {
     max-width: 1200px;
   }
@@ -28,6 +28,11 @@
   .Gamecoin__free {
     top: 149px;
     right: 124px;
+    .flex{
+      img{
+        align-self: flex-start;
+      }
+    }
   }
   .Gamecoin__text {
     color: #ffffff;

@@ -74,6 +74,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="version">0.0.2</div>
       </div>
     </div>
   );

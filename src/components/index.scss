@@ -32,27 +32,9 @@
         .link_bg {
           display: none;
         }
-
-        .link1 {
-          left: 16px;
-        }
-        .link2 {
-          left: 30px;
-        }
-        .link3 {
-          left: 30px;
-        }
-        .link4 {
-          left: 15px;
-        }
-        .link5 {
-          left: 12px;
-        }
-        .link6 {
-          left: 26px;
-        }
-        .link7 {
-          left: 24px;
+        .link_bg {
+          left: 50%;
+          transform: translateX(-50%);
         }
       }
       .link.active {
@@ -68,6 +50,15 @@
   }
 }
 .Footer {
+  position: relative;
+  .version {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3%;
+    font-size: 16px;
+    color: yellow;
+  }
   .Footer__nav {
     .wrapper-nav {
       flex-wrap: wrap;

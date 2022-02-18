@@ -7,8 +7,9 @@ import play from "./img/play.png";
 import Squitle32 from "./img/Squitle32.png";
 import Caterpie1a2 from "./img/Caterpie1a2.png";
 import Chuong1 from "./img/chuong1.png";
-import "./mobile.scss"
 import "./tablet.scss"
+import "./mobile.scss"
+
 const GamePlay = () => {
   return (
     <div
@@ -24,15 +25,15 @@ const GamePlay = () => {
         }}
         className="container mx-auto"
       >
-        <div>
+        <div className="wrapper-Chuong1-Caterpie1a2">
+          <img className="absolute Chuong1" src={Chuong1} alt="" />
+
           <img className="absolute Caterpie1a2" src={Caterpie1a2} alt="" />
         </div>
-
         <div>
           <img className="absolute Squitle32" src={Squitle32} alt="" />
         </div>
         <div>
-          <img className="absolute Chuong1" src={Chuong1} alt="" />
         </div>
         <div className="container mx-auto Gameplay__container ">
           <div>

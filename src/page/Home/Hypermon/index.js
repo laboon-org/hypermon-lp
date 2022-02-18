@@ -40,10 +40,10 @@ const Hypermon = () => {
                 <div className=" Hypermon_contract mt-2">
                   <div className="flex ">
                     <div className=" Hypermon_contract--left">
-                      <span>BEP20</span>
+                      <span>AVAX</span>
                     </div>
                     <div className="px-8">
-                      <span>0xvd0w314324wfsjfgrf086349dhd86301</span>
+                      <span>Coming Soon!</span>
                     </div>
                   </div>
                 </div>
@@ -54,10 +54,10 @@ const Hypermon = () => {
                 </div>
                 <div className="flex Hypermon_contract mt-2">
                   <div className=" Hypermon_contract--left">
-                    <span>BEP20</span>
+                    <span>AVAX</span>
                   </div>
                   <div className="px-8">
-                    <span>0xvd0w314324wfsjfgrf086349dhd86301</span>
+                    <span>Coming Soon!</span>
                   </div>
                 </div>
               </div>

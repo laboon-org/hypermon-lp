@@ -68,9 +68,9 @@ const OurCharacter = () => {
                 alt=""
               />
               <div className="character-properties">
-                <li><span> &#183;</span>&nbsp;&nbsp;&nbsp;SPIT FILE</li>
-                <li><span> &#183;</span>&nbsp;&nbsp;&nbsp;THUNDER</li>
-                <li><span> &#183;</span>&nbsp;&nbsp;&nbsp;DISCHARG</li>
+                <li>SPIT FILE</li>
+                <li>THUNDER</li>
+                <li>DISCHARG</li>
               </div>
             </div>
             <div className="Ourcharacter_description">

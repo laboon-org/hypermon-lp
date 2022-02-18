@@ -21,7 +21,7 @@
     .start-img {
       padding: 0 11%;
     }
-    .wrapper-star{
+    .wrapper-star {
       margin-top: -5%;
     }
   }
@@ -45,21 +45,21 @@
       position: absolute;
       bottom: 3%;
       right: 16%;
-      list-style-type:none;
-      li{
-        font-size: 15px;
-        background: linear-gradient(180deg, #EE9559 0%, #F5E47E 50%, #F3C17C 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      color: #f5e47e;
+      font-size: 15px;
+      background: linear-gradient(180deg, #ee9559 0%, #f5e47e 50%, #f3c17c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      li {
         // special DOT
-        span{
-          display: block;
-          font-size: 35px;
-          zoom: 1.4;
-          height: 22px;
-          margin-top: -22px;
-          margin-left: -4px;
-        }
+        // span {
+        //   display: block;
+        //   font-size: 35px;
+        //   zoom: 1.4;
+        //   height: 22px;
+        //   margin-top: -22px;
+        //   margin-left: -4px;
+        // }
       }
     }
     .Charmande__img {
@@ -73,7 +73,7 @@
       width: 7%;
     }
   }
-  .Ourcharacter_description{
+  .Ourcharacter_description {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -81,18 +81,18 @@
     font-family: "G.I. Incognito";
     color: #fff;
     padding: 6% 0 8%;
-    span{
-      &:first-child{
+    span {
+      &:first-child {
         width: 658px;
         text-align: center;
         font-size: 13px;
       }
-     &:last-child{
-      background: linear-gradient(0deg, #00ADEB -1.73%, #006BED 96.03%);
-      font-size: 40px;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-     }
+      &:last-child {
+        background: linear-gradient(0deg, #00adeb -1.73%, #006bed 96.03%);
+        font-size: 40px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
 }

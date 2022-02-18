@@ -1,47 +1,55 @@
 // small device responsive
 @media (max-width: 767.98px) {
-    .Gameplay {
-        .mb-header-gameplay {
-            width: 36%;
-        }
-        .Caterpie1a2 {
-            right: 18%;
-            bottom: -2%;
-        }
-        .Chuong1 {
-            right: -13%;
-            bottom: -13%;
-        }
-        .Squitle32 {
-            right: 0;
-            bottom: 17%;
-            width: 70%;
-        }
-        .Gameplay__container--wrapper {
-            width: 131%;
-            .mb-description-gameplay {
-                width: 100%;
-            }
-            .mb-play-icon {
-                padding-top: 30%;
-            }
-            .Gameplay_content {
-                width: 100%;
-            }
-        }
+  .Gameplay {
+    .mb-header-gameplay {
+      width: 36%;
     }
+    
+    .Caterpie1a2 {
+      right: 35%;
+      bottom: -2%;
+      width: 44%;
+    }
+    .Chuong1 {
+      right: 0;
+      bottom: -22%;
+    }
+    .Squitle32 {
+      right: 0;
+      bottom: 17%;
+      width: 70%;
+    }
+    .Gameplay__container--wrapper {
+      width: 131%;
+      .mb-description-gameplay {
+        width: 100%;
+      }
+      .mb-play-icon {
+        padding-top: 30%;
+      }
+      .Gameplay_content {
+        width: 100%;
+      }
+    }
+  }
 }
 // special mobile responsive
 @media (max-width: 450px) {
-    .Gameplay {
-        .Gameplay_content {
-            p {
-                font-size: 11px;
-                line-height: 16px;
-            }
-        }
-        .Chuong1 {
-            bottom: 0;
-        }
+  .Gameplay {
+    .Gameplay_content {
+      p {
+        font-size: 11px;
+        line-height: 16px;
+      }
     }
+    .Chuong1 {
+      bottom: 0;
+    }
+    .Caterpie1a2 {
+      right: 40%;
+    }
+    .Chuong1 {
+      bottom: -16%;
+    }
+  }
 }

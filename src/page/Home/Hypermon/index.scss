@@ -5,8 +5,28 @@
   }
   background-size: cover;
   background-position: center;
+  .mb-wrap-content-GameCoin{
+    .Hypermon_contract{
+      .px-8{
+        min-width: 256px;
+        text-align: center;
+      }
+    }
+  }
+  .mb-player-GameCoin {
+    // width: 100%;
+    // justify-content: center;
+    img:first-child {
+      padding-right: 2%;
+    }
+  }
   .Hypermon__container {
     padding-top: 40%;
+    .text-center{
+      .mb-logo-GameCoin{
+        align-self: center;
+      }
+    }
     .Hypermon_text {
       width: 658px;
       height: 54px;

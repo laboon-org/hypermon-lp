@@ -57,4 +57,18 @@
       align-self: flex-start;
     }
   }
+  .Footer {
+    .wrapper-nav {
+
+      div {
+        width: 82px !important;
+        display: flex;
+        justify-content: center;
+      }
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
 }
