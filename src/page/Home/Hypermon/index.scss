@@ -1,7 +1,14 @@
 .Hypermon {
   min-height: 100vh;
+  background-image: url("./img/bg.png");
   .container {
     max-width: 1200px;
+  }
+  .active{
+    display: block !important;
+  }
+  .unset-padding{
+    padding: unset !important;
   }
   background-size: cover;
   background-position: center;
@@ -16,7 +23,7 @@
   .mb-player-GameCoin {
     // width: 100%;
     // justify-content: center;
-    img:first-child {
+    .first-img {
       padding-right: 2%;
     }
   }

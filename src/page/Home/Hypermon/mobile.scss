@@ -12,6 +12,14 @@
         margin-top: unset;
       }
     }
+    .mb-player-GameCoin{
+      .first-img{
+        display: none;
+      }
+      .change-color{
+        display: block;
+      }
+    }
     .mb-wrap-content-GameCoin{
       .Hypermon_contract{
         .px-8{
@@ -19,5 +27,11 @@
         }
       }
     }
+  }
+}
+@media (max-width: 450px) {
+  .mobile-Hypermon{
+    background-image: url("../../../_assets/images/background_mobile.png");
+
   }
 }

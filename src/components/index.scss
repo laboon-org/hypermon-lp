@@ -2,7 +2,19 @@
   max-width: 1200px;
   padding-top: 60px;
   .Header_container {
+    .mb-menu {
+      display: none;
+    }
+    .bottom-header-menu {
+      display: none;
+    }
+    .w-100 {
+      width: 100%;
+    }
     .Header__link {
+      .link3 {
+        white-space: pre;
+      }
       .link {
         &:hover {
           span {
@@ -56,7 +68,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 3%;
-    font-size: 16px;
+    font-size: 8px;
     color: yellow;
   }
   .Footer__nav {
