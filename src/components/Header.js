@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./index.scss";
 import LogoMP from "./../_assets/images/link_marketplace.png";
 import HoverNav from "./../_assets/images/nav_item_hover.png";
@@ -17,6 +17,10 @@ import iconTw from "../_assets/icon/Tw.svg";
 const Header = () => {
   const [link, setLink] = useState("Home");
   const [showMenu, setShowMenu] = useState(false);
+  useEffect(() => {
+    setShowMenu(false)
+  }, [link])
+  
   return (
     <div class={`Header mx-auto ${showMenu && 'unset-padding'}`}>
       <div className="Header_container ">

@@ -105,6 +105,7 @@
           flex-direction: column;
           align-items: center;
           width: 100%;
+          padding-top: 58px;
           div:last-child {
             width: unset;
           }
@@ -148,6 +149,8 @@
         justify-content: space-between;
         width: 100%;
         align-items: center;
+        position: fixed;
+        z-index: 99999999;
         img:first-child {
           padding-bottom: 4%;
         }
