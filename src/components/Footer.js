@@ -48,15 +48,15 @@ const Footer = () => {
         <div className="Footer__inf flex justify-center">
           <div>
             <div className="flex items-center email">
-              <IconEmail width="24px" height="24px" />
-              <span className="pl-4">hi@laboon.org</span>
+              {/* <IconEmail width="24px" height="24px" />
+              <span className="pl-4">hi@laboon.org</span> */}
             </div>
             <div className="Footer__bottom pt-4">
               <div className="text-center">
-                <span>© 2022, all right reserved</span>
-              </div>
-              <div>
-                <span>Developed by Laboon.org</span>
+                <span>
+                  Copyright © 2022, all right reserved. Developed by{" "}
+                  <b>Laboon.org</b>
+                </span>
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="version">0.0.2</div>
+        <div className="version">v0.1.2 - 20220223</div>
       </div>
     </div>
   );

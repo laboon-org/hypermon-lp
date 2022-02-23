@@ -1,7 +1,8 @@
 {
   "name": "Hypermon-LP",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
+  "license": "MIT",
   "homepage": "./",
   "dependencies": {
     "@babel/core": "^7.17.2",
