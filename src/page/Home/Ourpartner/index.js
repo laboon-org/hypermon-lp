@@ -12,6 +12,7 @@ import "./mobile.scss"
 const index = () => {
   return (
     <div
+      id="out_partner"
       className="Ourpartner mx-auto"
       style={{
         backgroundColor: "#051435",

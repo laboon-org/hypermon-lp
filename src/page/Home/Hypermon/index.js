@@ -10,10 +10,7 @@ import "./tablet.scss"
 
 const Hypermon = () => {
   return (
-    <div
-      className="Hypermon mx-auto mobile-Hypermon"
-
-    >
+    <div id="hypermon" className="Hypermon mx-auto mobile-Hypermon">
       <Header />
       <div className="container mx-auto ">
         <div className="Hypermon__container">

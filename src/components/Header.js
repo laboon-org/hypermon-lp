@@ -31,7 +31,7 @@ const Header = () => {
             showMenu && "show-menu"
           }`}
         >
-          <div className="mb-logo-Header relative">
+          <a className="mb-logo-Header relative" href="#hypermon">
             <img src={LogoHypermon} className="toggle-icon-change" alt="" />
             <div className="mb-menu">
               <img
@@ -41,16 +41,17 @@ const Header = () => {
                 style={{ width: 36 }}
               />
             </div>
-          </div>
+          </a>
           <div className="flex Header__link items-center ">
             <img
               className={`${showMenu ? "active relative" : "hidden"}`}
               src={LogoHypermon}
               alt=""
             />
-            <div
+            <a
               onClick={() => setLink("Home")}
               className={`link relative z-10 ${link === "Home" && "active"}`}
+              href="#hypermon"
             >
               <img
                 src={HoverNav}
@@ -58,12 +59,13 @@ const Header = () => {
                 className="absolute link_bg link1 link_bg"
               />
               <span>Home</span>
-            </div>
-            <div
+            </a>
+            <a
               onClick={() => setLink("GAMEPLAY")}
               className={`link relative z-10 ${
                 link === "GAMEPLAY" ? "active" : ""
               }`}
+              href="#game_play"
             >
               <img
                 src={HoverNav}
@@ -71,13 +73,15 @@ const Header = () => {
                 className="absolute link_bg link2 link_bg"
               />
               <span>GAMEPLAY</span>
-            </div>
+            </a>
 
-            <div
+            <a
               onClick={() => setLink("NFTSITEM")}
               className={`link relative z-10 ${
                 link === "NFTSITEM" ? "active" : ""
               }`}
+              href="#nft_items"
+
             >
               <img
                 src={HoverNav}
@@ -85,13 +89,15 @@ const Header = () => {
                 className="absolute link_bg link3 link_bg"
               />
               <span className="link3">NFT ITEMS</span>
-            </div>
+            </a>
 
-            <div
+            <a
               onClick={() => setLink("COIN")}
               className={`link relative z-10 ${
                 link === "COIN" ? "active" : ""
               }`}
+              href="#coin"
+
             >
               <img
                 src={HoverNav}
@@ -99,11 +105,13 @@ const Header = () => {
                 className="absolute link_bg link4 link_bg"
               />
               <span>COIN</span>
-            </div>
+            </a>
 
-            <div
+            <a
               onClick={() => setLink("GEM")}
               className={`link relative z-10 ${link === "GEM" ? "active" : ""}`}
+              href="#gem"
+
             >
               <img
                 src={HoverNav}
@@ -111,13 +119,15 @@ const Header = () => {
                 className="absolute link_bg link5 link_bg"
               />
               <span>GEM</span>
-            </div>
+            </a>
 
-            <div
+            <a
               onClick={() => setLink("ROADMAP")}
               className={`link relative z-10 ${
                 link === "ROADMAP" ? "active" : ""
               }`}
+              href="#road_map"
+
             >
               <img
                 src={HoverNav}
@@ -125,13 +135,15 @@ const Header = () => {
                 className="absolute link_bg link6 link_bg"
               />
               <span>ROADMAP</span>
-            </div>
+            </a>
 
-            <div
+            <a
               onClick={() => setLink("PARTNER")}
               className={`link relative z-10 ${
                 link === "PARTNER" ? "active" : ""
               }`}
+              href="#out_partner"
+
             >
               <img
                 src={HoverNav}
@@ -139,7 +151,7 @@ const Header = () => {
                 className="absolute link_bg link7 link_bg"
               />
               <span>PARTNER</span>
-            </div>
+            </a>
             <div className="relative w-100">
               <img
                 src={showMenu ? link_marketplace_mobile : LogoMP}

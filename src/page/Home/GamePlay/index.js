@@ -13,6 +13,7 @@ import "./mobile.scss"
 const GamePlay = () => {
   return (
     <div
+      id="game_play"
       className="Gameplay mx-auto relative"
       style={{ backgroundColor: "#051435" }}
     >

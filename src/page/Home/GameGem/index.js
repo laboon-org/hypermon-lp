@@ -19,7 +19,7 @@ import "./mobile.scss"
 import "./tablet.scss"
 const index = () => {
   return (
-    <div className="Gamegem mx-auto" style={{ backgroundColor: "#051435" }}>
+    <div id="gem" className="Gamegem mx-auto" style={{ backgroundColor: "#051435" }}>
       <div className="container mx-auto pt-20 ">
         <div>
           <img className="mx-auto mb-nameheader" src={gamegem} alt="" />

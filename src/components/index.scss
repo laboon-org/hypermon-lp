@@ -84,7 +84,7 @@
         }
       }
     }
-    span {
+    a {
       cursor: pointer;
 
       font-family: "G.I. Incognito";
@@ -119,6 +119,9 @@
     }
     .Footer__bottom {
       span {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
         font-family: "Mulish";
         color: yellow;
         a {

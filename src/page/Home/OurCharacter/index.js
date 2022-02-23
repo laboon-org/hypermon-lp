@@ -16,7 +16,7 @@ import "./tablet.scss"
 
 const OurCharacter = () => {
   return (
-    <div style={{ backgroundColor: "#051435" }}>
+    <div id="our_character" style={{ backgroundColor: "#051435" }}>
       <div className="Ourcharacter mx-auto">
         <div className="mx-auto pt-28">
           <img className="mx-auto mb-name-Ourcharacter" src={textOur} alt="" />

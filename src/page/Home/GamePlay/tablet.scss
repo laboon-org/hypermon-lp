@@ -1,8 +1,11 @@
 // small device responsive
 @media (max-width: 1023.98px) {
   .Gameplay {
+    .container{
+      padding-top: unset;
+    }
     .Gameplay__container--wrapper {
-      padding-top: 83px !important;
+      padding-top: 39px !important;
     }
     .Caterpie1a2 {
       right: 294px;
@@ -19,16 +22,5 @@
       // bottom: 17%;
       width: 54%;
     }
-  }
-}
-// tablet responsive
-@media (min-width: 768px) and (max-width: 1023.98px) {
-  .Gameplay {
-    // .Gameplay__container--wrapper{
-    //     padding-top: 83px;
-    // }
-    // .mb-header-gameplay {
-    //     width: 44%;
-    // }
   }
 }

@@ -142,6 +142,18 @@
             }
           }
         }
+        .mb-logo-Header {
+          &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: unset;
+            filter: unset;
+          }
+        }
       }
       .mb-logo-Header {
         padding: 0 28px;
@@ -151,6 +163,21 @@
         align-items: center;
         position: fixed;
         z-index: 99999999;
+        top: 0;
+        *{
+          position: relative;
+          z-index: 1;
+        }
+        &::after{
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          background: rgba($color: #000000, $alpha: 0.2);
+          filter: blur(1px);
+        }
         img:first-child {
           padding-bottom: 4%;
         }
@@ -183,7 +210,7 @@
         justify-content: center;
       }
 
-      span {
+      a {
         font-size: 16px;
       }
     }
