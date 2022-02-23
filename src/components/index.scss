@@ -68,7 +68,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 3%;
-    font-size: 8px;
+    font-size: 9px;
     color: yellow;
   }
   .Footer__nav {
@@ -106,15 +106,14 @@
     }
   }
   .Footer__inf {
+    text-align: center;
     padding-top: 80px;
     .email {
       span {
+        display: inline-block !important;
         font-size: 20px;
         line-height: 25px;
         /* identical to box height, or 125% */
-
-        /* white */
-
         color: #ffffff;
       }
     }
@@ -122,6 +121,10 @@
       span {
         font-family: "Mulish";
         color: yellow;
+        a {
+          color: #ffffff;
+          display: inline-block !important;
+        }
       }
     }
   }

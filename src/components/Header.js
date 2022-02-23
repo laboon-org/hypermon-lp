@@ -18,15 +18,15 @@ const Header = () => {
   const [link, setLink] = useState("Home");
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <div class={`Header mx-auto ${showMenu && 'unset-padding'}`}>
+    <div className={`Header mx-auto ${showMenu && "unset-padding"}`}>
       <div className="Header_container ">
-        <div className={`flex justify-between mb-wrapper-header ${showMenu && 'show-menu'}`}>
+        <div
+          className={`flex justify-between mb-wrapper-header ${
+            showMenu && "show-menu"
+          }`}
+        >
           <div className="mb-logo-Header relative">
-            <img
-              src={LogoHypermon}
-              className='toggle-icon-change'
-              alt=""
-            />
+            <img src={LogoHypermon} className="toggle-icon-change" alt="" />
             <div className="mb-menu">
               <img
                 src={!showMenu ? menu_mobile : cancel_menu}
@@ -37,7 +37,11 @@ const Header = () => {
             </div>
           </div>
           <div className="flex Header__link items-center ">
-            <img className={`${showMenu ? 'active relative' : 'hidden'}`} src={LogoHypermon} alt="" />
+            <img
+              className={`${showMenu ? "active relative" : "hidden"}`}
+              src={LogoHypermon}
+              alt=""
+            />
             <div
               onClick={() => setLink("Home")}
               className={`link relative z-10 ${link === "Home" && "active"}`}
@@ -51,8 +55,9 @@ const Header = () => {
             </div>
             <div
               onClick={() => setLink("GAMEPLAY")}
-              className={`link relative z-10 ${link === "GAMEPLAY" ? "active" : ""
-                }`}
+              className={`link relative z-10 ${
+                link === "GAMEPLAY" ? "active" : ""
+              }`}
             >
               <img
                 src={HoverNav}
@@ -64,8 +69,9 @@ const Header = () => {
 
             <div
               onClick={() => setLink("NFTSITEM")}
-              className={`link relative z-10 ${link === "NFTSITEM" ? "active" : ""
-                }`}
+              className={`link relative z-10 ${
+                link === "NFTSITEM" ? "active" : ""
+              }`}
             >
               <img
                 src={HoverNav}
@@ -77,8 +83,9 @@ const Header = () => {
 
             <div
               onClick={() => setLink("COIN")}
-              className={`link relative z-10 ${link === "COIN" ? "active" : ""
-                }`}
+              className={`link relative z-10 ${
+                link === "COIN" ? "active" : ""
+              }`}
             >
               <img
                 src={HoverNav}
@@ -102,8 +109,9 @@ const Header = () => {
 
             <div
               onClick={() => setLink("ROADMAP")}
-              className={`link relative z-10 ${link === "ROADMAP" ? "active" : ""
-                }`}
+              className={`link relative z-10 ${
+                link === "ROADMAP" ? "active" : ""
+              }`}
             >
               <img
                 src={HoverNav}
@@ -115,8 +123,9 @@ const Header = () => {
 
             <div
               onClick={() => setLink("PARTNER")}
-              className={`link relative z-10 ${link === "PARTNER" ? "active" : ""
-                }`}
+              className={`link relative z-10 ${
+                link === "PARTNER" ? "active" : ""
+              }`}
             >
               <img
                 src={HoverNav}
@@ -126,13 +135,16 @@ const Header = () => {
               <span>PARTNER</span>
             </div>
             <div className="relative w-100">
-              <img src={showMenu ? link_marketplace_mobile : LogoMP} className="mb-img-header" alt="" />
-              {
-                showMenu &&
+              <img
+                src={showMenu ? link_marketplace_mobile : LogoMP}
+                className="mb-img-header"
+                alt=""
+              />
+              {showMenu && (
                 <div className="active-lastimg">
                   <img src={shadow}></img>
                 </div>
-              }
+              )}
             </div>
             <div className="relative bottom-header-menu">
               <div className="flex items-center email">
@@ -159,7 +171,6 @@ const Header = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
