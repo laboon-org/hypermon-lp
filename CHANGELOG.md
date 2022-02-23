@@ -12,3 +12,8 @@
 
 - Content 1
 - Content 2
+
+# 0.1.3
+
+- fix: footer version info
+- fix: nav-bar mobile

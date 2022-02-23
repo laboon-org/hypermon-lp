@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./index.scss";
+
 import LogoMP from "./../_assets/images/link_marketplace.png";
 import HoverNav from "./../_assets/images/nav_item_hover.png";
 import LogoHypermon from "./../_assets/images/logo_large.png";
@@ -8,6 +9,7 @@ import home_mobile from "./../_assets/images/home_mobile.png";
 import cancel_menu from "./../_assets/images/cancel_menu.png";
 import link_marketplace_mobile from "./../_assets/images/link_marketplace_mobile.png";
 import shadow from "./../_assets/images/shadow.png";
+
 import "./mobile.scss"
 
 import iconEmail from "../_assets/icon/email.svg";
@@ -20,7 +22,7 @@ const Header = () => {
   useEffect(() => {
     setShowMenu(false)
   }, [link])
-  
+
   return (
     <div className={`Header mx-auto ${showMenu && "unset-padding"}`}>
       <div className="Header_container ">
