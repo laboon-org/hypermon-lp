@@ -5,6 +5,7 @@ import { ReactComponent as IconFb } from "../_assets/icon/Fb.svg";
 import { ReactComponent as IconTele } from "../_assets/icon/tele.svg";
 import { ReactComponent as IconTw } from "../_assets/icon/Tw.svg";
 import "./mobile.scss"
+
 const Footer = () => {
   const [status, setStatus] = React.useState("HOME")
   return (
@@ -115,7 +116,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="version">v0.1.3 - 20220223</div>
+        <div className="version">v0.1.4 - 20220224</div>
       </div>
     </div>
   );
