@@ -33,7 +33,7 @@ const Footer = () => {
               <div>
                 <a
                   href="https://play.hypermon.games/"
-                  className={`${status === "GAMEPLAY s" && "active"}`}
+                  className={`${status === "GAMEPLAY" && "active"}`}
                   onClick={() => setStatus("GAMEPLAY")}
                 >
                   GAMEPLAY
