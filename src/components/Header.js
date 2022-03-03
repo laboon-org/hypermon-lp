@@ -27,9 +27,8 @@ const Header = () => {
     <div className={`Header mx-auto ${showMenu && "unset-padding"}`}>
       <div className="Header_container ">
         <div
-          className={`flex justify-between mb-wrapper-header ${
-            showMenu && "show-menu"
-          }`}
+          className={`flex justify-between mb-wrapper-header ${showMenu && "show-menu"
+            }`}
         >
           <a className="mb-logo-Header relative" href="#hypermon">
             <img src={LogoHypermon} className="toggle-icon-change" alt="" />
@@ -62,9 +61,8 @@ const Header = () => {
             </a>
             <a
               onClick={() => setLink("GAMEPLAY")}
-              className={`link relative z-10 ${
-                link === "GAMEPLAY" ? "active" : ""
-              }`}
+              className={`link relative z-10 ${link === "GAMEPLAY" ? "active" : ""
+                }`}
               // href="#game_play"
               href="https://play.hypermon.games/"
             >
@@ -78,9 +76,8 @@ const Header = () => {
 
             <a
               onClick={() => setLink("NFTSITEM")}
-              className={`link relative z-10 ${
-                link === "NFTSITEM" ? "active" : ""
-              }`}
+              className={`link relative z-10 ${link === "NFTSITEM" ? "active" : ""
+                }`}
               href="#nft_items"
 
             >
@@ -94,9 +91,8 @@ const Header = () => {
 
             <a
               onClick={() => setLink("COIN")}
-              className={`link relative z-10 ${
-                link === "COIN" ? "active" : ""
-              }`}
+              className={`link relative z-10 ${link === "COIN" ? "active" : ""
+                }`}
               href="#coin"
 
             >
@@ -124,9 +120,8 @@ const Header = () => {
 
             <a
               onClick={() => setLink("ROADMAP")}
-              className={`link relative z-10 ${
-                link === "ROADMAP" ? "active" : ""
-              }`}
+              className={`link relative z-10 ${link === "ROADMAP" ? "active" : ""
+                }`}
               href="#road_map"
 
             >
@@ -140,9 +135,8 @@ const Header = () => {
 
             <a
               onClick={() => setLink("PARTNER")}
-              className={`link relative z-10 ${
-                link === "PARTNER" ? "active" : ""
-              }`}
+              className={`link relative z-10 ${link === "PARTNER" ? "active" : ""
+                }`}
               href="#out_partner"
 
             >
@@ -154,11 +148,15 @@ const Header = () => {
               <span>PARTNER</span>
             </a>
             <div className="relative w-100">
-              <img
-                src={showMenu ? link_marketplace_mobile : LogoMP}
-                className="mb-img-header"
-                alt=""
-              />
+
+              <a href="https://play.hypermon.games/marketplace" className="mb-img-header">
+
+                <img
+                  src={showMenu ? link_marketplace_mobile : LogoMP}
+                  alt=""
+                />
+              </a>
+
               {showMenu && (
                 <div className="active-lastimg">
                   <img src={shadow}></img>
