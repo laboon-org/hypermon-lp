@@ -13,7 +13,7 @@ const LoginPage = () => {
     else setPassword(inputTarget.value)
   }
   const handleSubmit = () => {
-    if (user === "admin" && password === "admin") {
+    if (user === "admin" && password === "8SKuecEAetRvtrjJ") {
       localStorage.setItem('auth', true);
       navigate('/');
     }

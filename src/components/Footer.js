@@ -115,7 +115,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="version">v0.1.3 - 20220223</div>
+        <div className="version">v0.1.2 - 20220303</div>
       </div>
     </div>
   );
