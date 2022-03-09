@@ -1,9 +1,11 @@
 .Gamemap {
   .main-img-content{
+    z-index: 1;
+    // position: absolute;
     img{
       width: 100%;
     }
-    
+  
   }
   .Gamemap__content {
     p {
@@ -21,5 +23,38 @@
 
       color: #ffffff;
     }
+  }
+  .cloud {
+    z-index: 1;
+    position: absolute;
+    width: 90%;
+    animation: fly 20s linear infinite;
+    transform: translateY(200px);
+  }
+  .cloud1 {
+    animation: fly2 30s linear infinite;
+    width: 30%;
+    transform: translateY(-20px);
+  }
+  .cloud2 {
+    animation: fly2 50s linear infinite;
+    width: 40%;
+    transform: translateY(-140px);
+  }
+  .cloud2, .cloud1 {
+    z-index: 1;
+    position: absolute;
+  }
+  @keyframes fly {
+    0% { margin-left: -100px; opacity: 0.3; }
+    50% {opacity: 0.5; }
+    70% { opacity: 0.2; }
+    100% { margin-left: 100%; opacity: 0.8; }
+  }
+  @keyframes fly2 {
+    0% { margin-left: -1px; opacity: 1; }
+    20% { opacity: 0.8; }
+    50% { opacity: 0.6; transform: translateY(-150px); }
+    100% { margin-left: 100%; opacity: 1; }
   }
 }

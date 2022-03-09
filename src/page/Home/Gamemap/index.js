@@ -2,7 +2,10 @@ import React from "react";
 import "./index.scss";
 import GameMap from "./img/gamemap.png";
 import Map from "./img/map1.png";
-import "./mobile.scss"
+import Cloud from "./img/clouds.png";
+import Cloud2 from "./img/sky.png";
+import "./mobile.scss";
+
 const index = () => {
   return (
     <div className="Gamemap mx-auto" style={{ backgroundColor: "#051435" }}>
@@ -20,11 +23,22 @@ const index = () => {
             </p>
           </div>
         </div>
-        <div>
+
+        <div className="space">
+        <div className="cloud1"  >
+            <img src={Cloud2}  alt="" />
+          </div>
+          <div className="cloud"  >
+            <img src={Cloud}  alt="" />
+          </div>
           <div className="mt-20 main-img-content">
             <img src={Map} alt="" />
           </div>
+          <div className="cloud2"  >
+            <img src={Cloud2}  alt="" />
+          </div>
         </div>
+
       </div>
     </div>
   );
