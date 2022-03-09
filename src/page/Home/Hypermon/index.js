@@ -6,6 +6,9 @@ import Banner from "./img/name.png";
 import totalPlayer from "./img/Totalplayer.png";
 import number from "./img/1.670.890.png";
 import Header from "../../../components/Header";
+import Light from "./img/light.png";
+import Fire from "./img/fire.png";
+import Thunder from "./img/thunder.png";
 import "./tablet.scss"
 
 const Hypermon = () => {
@@ -17,8 +20,11 @@ const Hypermon = () => {
       <Header />
       <div className="container mx-auto ">
         <div className="Hypermon__container">
+          {/* <img src={Fire} alt="" className="fire"/> */}
+          <img src={Thunder} alt="" className="thunder mb-thunder"/>
           <div className="text-center flex">
             <img src={Banner} alt="" className="mx-auto mb-logo-GameCoin" />
+            <img src={Light} alt="" className="light" />
           </div>
           <div className="Hypermon_text mx-auto">
             <p>

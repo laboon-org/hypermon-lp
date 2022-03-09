@@ -85,5 +85,31 @@
         }
       }
     }
+    .light {
+      width: 50%;
+      transform: translate(990px,-320px);
+      position: absolute;
+      animation: light 0.3s ease-in infinite;
+    }
+    @keyframes light {
+      from { opacity: 0} to { opacity: 1}
+    }
+    .fire {
+      width: 40%;
+      transform: translate(-200px,-300px);
+      position: absolute;
+    }
+    .thunder {
+      width: 10%;
+      top: 40%;
+      transform: translate(660px,-200px);
+      position: static;
+      animation: thunder 0.3s ease-in;
+    }
+    @keyframes thunder {
+      0% { width: 0%}
+      100% { width: 10% }
+    }
   }
+  
 }
