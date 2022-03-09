@@ -1,7 +1,16 @@
 .Gameplay {
   overflow: hidden;
+  position: relative;
+
   .container {
     max-width: 1200px;
+    // padding-top: 5rem;
+  }
+  .wrapper-Chuong1-Caterpie1a2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
   }
   .Gameplay__container--wrapper {
     padding-top: 200px;
@@ -33,10 +42,15 @@
   .Chuong1 {
     right: 65px;
     bottom: -155px;
+    z-index: 1;
   }
 
   .Squitle32 {
     right: 0;
     bottom: 100px;
+  }
+}
+@media (min-width: 1280px) {
+  .Gameplay {
   }
 }

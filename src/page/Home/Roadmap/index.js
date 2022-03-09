@@ -9,6 +9,7 @@ import "./mobile.scss"
 const index = () => {
   return (
     <div
+      id="road_map"
       className="Roadmap mx-auto"
       style={{
         backgroundColor: "#051435",
@@ -35,7 +36,7 @@ const index = () => {
                 <span>1/2022</span>
                 <span> <span className="symbol-text">I&nbsp;</span> Step one</span>
                 <span>
-                Nam libero tempore, cum soluta nobis est eligendi
+                  Nam libero tempore, cum soluta nobis est eligendi
                   optio cumque nihil impedit
                   quo minus id quod maxime placeat facere.
                 </span>

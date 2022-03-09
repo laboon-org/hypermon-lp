@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import "./mobile.scss"
-import bg from "./img/bg.png";
+import number_player from "./img/number_player.png";
 import Banner from "./img/name.png";
 import totalPlayer from "./img/Totalplayer.png";
 import number from "./img/1.670.890.png";
@@ -13,10 +13,7 @@ import "./tablet.scss"
 
 const Hypermon = () => {
   return (
-    <div
-      className="Hypermon mx-auto"
-      style={{ backgroundImage: `url(${bg})`, backgroundRepeat: "no-repeat" }}
-    >
+    <div id="hypermon" className="Hypermon mx-auto mobile-Hypermon">
       <Header />
       <div className="container mx-auto ">
         <div className="Hypermon__container">
@@ -36,7 +33,9 @@ const Hypermon = () => {
           <div className="Hypermon_text--bottom mt-8 mx-auto pb-16 mb-content-GameCoin">
             <div className="flex justify-around items-center mb-wrap-content-GameCoin">
               <div className="flex items-center mb-player-GameCoin">
-                <img src={number} alt="" />
+                <img src={number} className="first-img" alt="" />
+                <img src={number_player} className="first-img change-color hidden" alt="" />
+
                 <img src={totalPlayer} alt="" />
               </div>
               <div>
@@ -46,10 +45,10 @@ const Hypermon = () => {
                 <div className=" Hypermon_contract mt-2">
                   <div className="flex ">
                     <div className=" Hypermon_contract--left">
-                      <span>BEP20</span>
+                      <span>AVAX</span>
                     </div>
                     <div className="px-8">
-                      <span>0xvd0w314324wfsjfgrf086349dhd86301</span>
+                      <span>Coming Soon!</span>
                     </div>
                   </div>
                 </div>
@@ -60,10 +59,10 @@ const Hypermon = () => {
                 </div>
                 <div className="flex Hypermon_contract mt-2">
                   <div className=" Hypermon_contract--left">
-                    <span>BEP20</span>
+                    <span>AVAX</span>
                   </div>
                   <div className="px-8">
-                    <span>0xvd0w314324wfsjfgrf086349dhd86301</span>
+                    <span>Coming Soon!</span>
                   </div>
                 </div>
               </div>

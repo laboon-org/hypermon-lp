@@ -44,9 +44,11 @@
   .Gamecoin__free {
     top: 149px;
     right: 124px;
-    animation-delay: 4s;
-    animation-name: blink;
-    animation-duration: 3s;
+    .flex{
+      img{
+        align-self: flex-start;
+      }
+    }
   }
   .Gamecoin__text {
     color: #ffffff;

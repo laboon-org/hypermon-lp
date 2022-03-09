@@ -1,14 +1,26 @@
 .Gamegem {
-  padding-top: 50px;
   padding-bottom: 400px;
-
+  overflow: hidden;
   .container {
     max-width: 1200px;
   }
   .mb-padding-right,
-  .mb-padding-left{
+  .mb-padding-left {
     padding-top: 15%;
   }
+  .mb-padding-left {
+    padding-left: 2%;
+  }
+  .mb-padding-right {
+    padding-top: 14%;
+    padding-right: 2%;
+    .flex {
+      img {
+        align-self: flex-start;
+      }
+    }
+  }
+
   .Gamegem__content {
     width: 652px;
     height: 49px;

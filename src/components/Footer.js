@@ -6,6 +6,7 @@ import { ReactComponent as IconTele } from "../_assets/icon/tele.svg";
 import { ReactComponent as IconTw } from "../_assets/icon/Tw.svg";
 import "./mobile.scss"
 const Footer = () => {
+  const [status, setStatus] = React.useState("HOME")
   return (
     <div
       className="Footer mx-auto"
@@ -20,27 +21,67 @@ const Footer = () => {
           <div className="Footer__nav pt-24">
             <div className="flex justify-center wrapper-nav">
               <div>
-                <span className="active">Home</span>
-              </div>
-              <div>
-                <a href="https://play.hypermon.games/">
-                  <span>GAMEPLAY</span>
+                <a
+                  href="#hypermon"
+                  className={`${status == "HOME" && "active"}`}
+                  onClick={() => setStatus("HOME")}
+                >
+                  HOME
                 </a>
               </div>
               <div>
-                <span>NFTS ITEM</span>
+                <a
+                  href="https://play.hypermon.games/"
+                  className={`${status === "GAMEPLAY" && "active"}`}
+                  onClick={() => setStatus("GAMEPLAY")}
+                >
+                  GAMEPLAY
+                </a>
               </div>
               <div>
-                <span>COIN</span>
+                <a
+                  href="#nft_items"
+                  className={`${status === "NFT ITEMS" && "active"}`}
+                  onClick={() => setStatus("NFT ITEMS")}
+                >
+                  NFT ITEMS
+                </a>
               </div>
               <div>
-                <span>GEM</span>
+                <a
+                  href="#coin"
+                  className={`${status === "COIN" && "active"}`}
+                  onClick={() => setStatus("COIN")}
+                >
+                  COIN
+                </a>
               </div>
               <div>
-                <span>ROADMAP</span>
+                <a
+                  href="#gem"
+                  className={`${status === "GEM" && "active"}`}
+                  onClick={() => setStatus("GEM")}
+                >
+                  GEM
+                </a>
               </div>
               <div>
-                <span>PARTNER</span>
+                <a
+                  href="#road_map"
+                  className={`${status === "ROADMAP" && "active"}`}
+                  onClick={() => setStatus("ROADMAP")}
+                >
+                  ROADMAP
+                </a>
+              </div>
+              <div>
+                <a
+                  href="#partner"
+                  className={`${status === "PARTNER" && "active"}`}
+                  onClick={() => setStatus("PARTNER")}
+                >
+                  PARTNER
+                </a>
               </div>
             </div>
           </div>
@@ -48,15 +89,15 @@ const Footer = () => {
         <div className="Footer__inf flex justify-center">
           <div>
             <div className="flex items-center email">
-              <IconEmail width="24px" height="24px" />
-              <span className="pl-4">hi@laboon.org</span>
+              {/* <IconEmail width="24px" height="24px" />
+              <span className="pl-4">hi@laboon.org</span> */}
             </div>
             <div className="Footer__bottom pt-4">
               <div className="text-center">
-                <span>© 2022, all right reserved</span>
-              </div>
-              <div>
-                <span>Developed by Laboon.org</span>
+                <span>
+                  Copyright © 2022, all right reserved. Developed by{" "}
+                  <b>Laboon.org</b>
+                </span>
               </div>
             </div>
           </div>
@@ -74,6 +115,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <div className="version">v0.1.2 - 20220303</div>
       </div>
     </div>
   );

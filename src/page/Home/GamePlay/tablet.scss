@@ -1,32 +1,26 @@
 // small device responsive
 @media (max-width: 1023.98px) {
-  .Gameplay__container--wrapper {
-    padding-top: 83px !important;
-  }
-}
-// tablet responsive
-@media (min-width: 768px) and (max-width: 1023.98px) {
   .Gameplay {
-    // .Gameplay__container--wrapper{
-    //     padding-top: 83px;
-    // }
-    // .mb-header-gameplay {
-    //     width: 44%;
-    // }
+    .container{
+      padding-top: unset;
+    }
+    .Gameplay__container--wrapper {
+      padding-top: 39px !important;
+    }
     .Caterpie1a2 {
-      right: 28%;
-      bottom: 9%;
-      width: 33%;
+      right: 294px;
+      bottom: 7%;
+      width: 300px;
     }
     .Chuong1 {
-      right: 2%;
-      bottom: -6%;
-      width: 63%;
+      right: 34px;
+      // /* bottom: -6%; */
+      width: 700px;
     }
     .Squitle32 {
-      right: 0;
-      bottom: 17%;
-      width: 31%;
+      // right: 0;
+      // bottom: 17%;
+      width: 54%;
     }
   }
 }

@@ -18,7 +18,7 @@ import bgafter from "./img/bgafter.jpg";
 
 const index = () => {
   return (
-    <div className="GameCoin mx-auto" style={{ backgroundColor: "#051435" }}>
+    <div id="coin" className="GameCoin mx-auto" style={{ backgroundColor: "#051435" }}>
       <div className="container mx-auto pt-20">
         <div className="relative z-10">
           <div>

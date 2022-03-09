@@ -1,15 +1,19 @@
 import React from "react";
-
-import HomePage from "./page/Home";
-import ErrorBoundary from "./util/ErrorBoundary";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { PrivateRoute } from './components/PrivateRoute';
+import LoginPage from './LoginPage/LoginPage';
 
 function App() {
   return (
-    <div className="App">
-      <ErrorBoundary>
-        <HomePage />
-      </ErrorBoundary>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<PrivateRoute />}>
+          </Route>
+          <Route path="/login" element={<LoginPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

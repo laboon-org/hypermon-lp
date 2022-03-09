@@ -16,7 +16,7 @@ import "./tablet.scss"
 
 const OurCharacter = () => {
   return (
-    <div style={{ backgroundColor: "#051435" }}>
+    <div id="our_character" style={{ backgroundColor: "#051435" }}>
       <div className="Ourcharacter mx-auto">
         <div className="mx-auto pt-28">
           <img className="mx-auto mb-name-Ourcharacter" src={textOur} alt="" />
@@ -68,9 +68,9 @@ const OurCharacter = () => {
                 alt=""
               />
               <div className="character-properties">
-                <li><span> &#183;</span>&nbsp;&nbsp;&nbsp;SPIT FILE</li>
-                <li><span> &#183;</span>&nbsp;&nbsp;&nbsp;THUNDER</li>
-                <li><span> &#183;</span>&nbsp;&nbsp;&nbsp;DISCHARG</li>
+                <li>SPIT FILE</li>
+                <li>THUNDER</li>
+                <li>DISCHARG</li>
               </div>
             </div>
             <div className="Ourcharacter_description">

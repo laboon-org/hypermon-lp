@@ -2,7 +2,20 @@
   max-width: 1200px;
   padding-top: 60px;
   .Header_container {
+    .mb-menu {
+      display: none;
+    }
+    .bottom-header-menu {
+      display: none;
+    }
+    .w-100 {
+      width: 100%;
+      display: flex;
+    }
     .Header__link {
+      .link3 {
+        white-space: pre;
+      }
       .link {
         &:hover {
           span {
@@ -32,27 +45,9 @@
         .link_bg {
           display: none;
         }
-
-        .link1 {
-          left: 16px;
-        }
-        .link2 {
-          left: 30px;
-        }
-        .link3 {
-          left: 30px;
-        }
-        .link4 {
-          left: 15px;
-        }
-        .link5 {
-          left: 12px;
-        }
-        .link6 {
-          left: 26px;
-        }
-        .link7 {
-          left: 24px;
+        .link_bg {
+          left: 50%;
+          transform: translateX(-50%);
         }
       }
       .link.active {
@@ -68,6 +63,15 @@
   }
 }
 .Footer {
+  position: relative;
+  .version {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3%;
+    font-size: 9px;
+    color: yellow;
+  }
   .Footer__nav {
     .wrapper-nav {
       flex-wrap: wrap;
@@ -81,7 +85,7 @@
         }
       }
     }
-    span {
+    a {
       cursor: pointer;
 
       font-family: "G.I. Incognito";
@@ -103,22 +107,28 @@
     }
   }
   .Footer__inf {
+    text-align: center;
     padding-top: 80px;
     .email {
       span {
+        display: inline-block !important;
         font-size: 20px;
         line-height: 25px;
         /* identical to box height, or 125% */
-
-        /* white */
-
         color: #ffffff;
       }
     }
     .Footer__bottom {
       span {
+        display: block;
+        width: 70%;
+        margin: 0 auto;
         font-family: "Mulish";
         color: yellow;
+        a {
+          color: #ffffff;
+          display: inline-block !important;
+        }
       }
     }
   }
