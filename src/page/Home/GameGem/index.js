@@ -73,7 +73,7 @@ const index = () => {
                   alt=""
                 />
                 <img
-                  className="absolute"
+                  className="absolute blink"
                   src={klipartz12}
                   alt=""
                 />

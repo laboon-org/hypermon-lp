@@ -49,4 +49,25 @@
     font-size: 25px;
     line-height: 40px;
   }
+
+  @keyframes blink {
+    0% { opacity: 0;}
+    30% { opacity: 0.3}
+    50% { opacity: 0.5;}
+    80% { opacity: 0.8;}
+    100% { opacity: 1;}
+ }
+ .blink {
+    animation: blink 2s ease-in;
+    position: absolute;
+ }
+ .Gamegem_exchange, .Gamegem__free {
+  animation: blink 3s;
+ }
+ .Gamegem_exchange {
+  animation-delay: 2s;
+ }
+ .Gamegem__free {
+  animation-delay: 4s;
+ }
 }
