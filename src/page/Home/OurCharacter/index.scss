@@ -65,6 +65,10 @@
     .Charmande__img {
       z-index: 2;
       width: 39%;
+      animation: mov 2s alternate infinite;
+    }
+    @keyframes mov {
+      from { transform: translate(0px,0px);} to { transform: translate(0px,15px);}
     }
     .fire__img {
       z-index: 2;
