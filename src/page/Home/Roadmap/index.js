@@ -4,9 +4,12 @@ import roadmap from "./img/roadmap.png";
 import bg from "./img/bg.png";
 import road_responsive from "./img/road_develop.png";
 import Road from "./img/Road.png";
-import "./tablet.scss"
-import "./mobile.scss"
+import "./tablet.scss";
+import "./mobile.scss";
+import "../../../components/reveal.scss";
+
 const index = () => {
+
   return (
     <div
       id="road_map"
@@ -18,7 +21,7 @@ const index = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="mx-auto main-wrapper">
+      <div className="mx-auto main-wrapper fadeUp">
         <div>
           <img className="mx-auto header-name" src={roadmap} alt="" />
         </div>

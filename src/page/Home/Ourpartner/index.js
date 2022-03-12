@@ -7,9 +7,12 @@ import item2 from "./img/item2.png";
 import item3 from "./img/item3.png";
 import item4 from "./img/item4.png";
 import item5 from "./img/item5.png";
-import "./tablet.scss"
-import "./mobile.scss"
+import "./tablet.scss";
+import "./mobile.scss";
+import "../../../components/reveal.scss";
+
 const index = () => {
+  
   return (
     <div
       id="out_partner"
@@ -21,7 +24,7 @@ const index = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="container mx-auto pt-20">
+      <div className="container mx-auto pt-20 fadeUp">
         <div>
           <img className="mx-auto mb-headername" src={ourpartner} alt="" />
         </div>

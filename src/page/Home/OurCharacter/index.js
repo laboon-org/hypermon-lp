@@ -11,14 +11,28 @@ import star from "./img/charmande/star.png";
 import Charmande1 from "./img/Charmande1.png";
 import Vector from "./img/Vector.png";
 import Fire from "./img/fire.png";
-import "./mobile.scss"
-import "./tablet.scss"
+import "./mobile.scss";
+import "./tablet.scss";
+import "../../../components/reveal.scss";
 
 const OurCharacter = () => {
+  window.addEventListener('scroll', fadeUp);
+  function fadeUp() {
+    const fadeUp = document.querySelectorAll('.fadeUp');
+    for (let i = 0; i < fadeUp.length; i++) {
+      const windowHeight = window.innerHeight;
+      const fadeUpTop = fadeUp[i].getBoundingClientRect().top;
+      if (fadeUpTop < windowHeight) {
+        fadeUp[i].classList.add('fly');
+      } else {
+        fadeUp[i].classList.remove('fly');
+      }
+    }
+  }
   return (
     <div id="our_character" style={{ backgroundColor: "#051435" }}>
       <div className="Ourcharacter mx-auto">
-        <div className="mx-auto pt-28">
+        <div className="mx-auto pt-28 fadeUp">
           <img className="mx-auto mb-name-Ourcharacter" src={textOur} alt="" />
         </div>
         <div

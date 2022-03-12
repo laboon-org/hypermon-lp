@@ -1,0 +1,36 @@
+.fly {
+    animation: toTop 2s alternate;
+  }
+  @keyframes toTop {
+    from { transform: translate(0px, 100px); } to { transform: translate(0px, 0px);}
+  }
+  .detail {
+    animation-name: blinkItem;
+    animation-duration: 3s;
+  }
+  @keyframes blinkItem {
+    0% { opacity: 0; }
+    100% { opacity: 0.8; }
+  }
+  .blink {
+    animation: blink 5s linear;
+ }
+  @keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+ }
+  .item {
+    animation-delay: 0.1s;
+  }
+  .item1 {
+    animation-delay: 0.5s;
+  }
+  .item2 {
+    animation-delay: 1s;
+  }
+  .item3 {
+    animation-delay: 2s;
+  }
+  .item4 {
+    animation-delay: 3s;
+  }
