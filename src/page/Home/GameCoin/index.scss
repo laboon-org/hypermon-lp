@@ -3,20 +3,6 @@
   .container {
     max-width: 1200px;
   }
-  .eggs {
-    animation-name: egg;
-    animation-duration: 1s;
-    position: absolute;
-  }
-  @keyframes egg {
-    from {zoom: 50%} to { zoom: 100%}
-  }
-  .transis {
-    animation: blink 2s  alternate;
-  }
-  @keyframes blink {
-    from { top: 130px; opacity: 0 } to  { top: 150px; opacity: 0.8}
-  }
   .GameCoin__content {
     width: 652px;
     height: 49px;
@@ -37,9 +23,6 @@
   .Gamecoin_exchange {
     left: 92px;
     top: 170px;
-    animation-delay: 2s;
-    animation-name: blink;
-    animation-duration: 3s;
   }
   .Gamecoin__free {
     top: 149px;
