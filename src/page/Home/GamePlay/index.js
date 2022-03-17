@@ -12,19 +12,7 @@ import "./mobile.scss";
 import "../../../components/reveal.scss";
 
 const GamePlay = () => {
-  // window.addEventListener('scroll', skill);
-  // function skill() {
-  //   const skill = document.querySelectorAll('.skill');
-  //   for (let i = 0; i < skill.length; i++) {
-  //     const windowHeight = window.innerHeight;
-  //     const skillTop = skill[i].getBoundingClientRect().top;
-  //     if (skillTop < windowHeight) {
-  //       skill[i].classList.add('skill');
-  //     } else {
-  //       skill[i].classList.remove('skill');
-  //     }
-  //   }
-  // }
+
   return (
     <div
       id="game_play"
