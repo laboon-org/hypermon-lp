@@ -21,11 +21,11 @@ const index = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="mx-auto main-wrapper fadeUp">
+      <div className="mx-auto main-wrapper">
         <div>
-          <img className="mx-auto header-name" src={roadmap} alt="" />
+          <img className="mx-auto header-name fadeUp" src={roadmap} alt="" />
         </div>
-        <div className="Roadmap__content mx-auto mt-10">
+        <div className="Roadmap__content mx-auto mt-10 contentFadeUp">
           <p>
             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
             impedit quo minus id quod maxime placeat facere possimus, omnis

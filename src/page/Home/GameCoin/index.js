@@ -36,11 +36,11 @@ const index = () => {
   return (
     <div id="coin" className="GameCoin mx-auto" style={{ backgroundColor: "#051435" }}>
       <div className="container mx-auto pt-20">
-        <div className="relative z-10 fadeUp">
+        <div className="relative z-10">
           <div>
-            <img className="mx-auto mb-nameheader" src={GameCoin} alt="" />
+            <img className="mx-auto mb-nameheader fadeUp" src={GameCoin} alt="" />
           </div>
-          <div className="GameCoin__content mx-auto mt-10">
+          <div className="GameCoin__content mx-auto mt-10 contentFadeUp">
             <p>
               Nam libero tempore, cum soluta nobis est eligendi optio cumque
               nihil impedit quo minus id quod maxime placeat facere possimus,

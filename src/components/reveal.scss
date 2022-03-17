@@ -1,8 +1,12 @@
-.fly {
-    animation: toTop 2s alternate;
+  .fly {
+    animation: toTop 2s ease-out;
+  }
+  .contentFly {
+    animation: toTop 3s ease-out;
   }
   @keyframes toTop {
-    from { transform: translate(0px, 100px); } to { transform: translate(0px, 0px);}
+    0% { transform: translate(0px, 100px); opacity: 0;  }
+    100% { transform: translate(0px, 0px); opacity: 1}
   }
   .detail {
     animation-name: blinkItem;
@@ -10,14 +14,17 @@
   }
   @keyframes blinkItem {
     0% { opacity: 0; }
-    100% { opacity: 0.8; }
+    100% { opacity: 1; }
+   
   }
   .blink {
-    animation: blink 5s linear;
+    animation: blink 3s linear infinite;
  }
   @keyframes blink {
-    0% { opacity: 0; }
-    50% { opacity: 0; }
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    70% { opacity: 0.7};
+    100% { opacity: 0.5; }
  }
   .item {
     animation-delay: 0.1s;
