@@ -17,11 +17,17 @@ const Hypermon = () => {
       <Header />
       <div className="container mx-auto ">
         <div className="Hypermon__container">
-          {/* <img src={Fire} alt="" className="fire"/> */}
+        <div>
+          <img src={Fire} alt="" className="fire"/>
+          </div>
+          <div>
           <img src={Thunder} alt="" className="thunder mb-thunder"/>
+          </div>
+          <div>
+            <img src={Light} alt="" className="light" />
+          </div>
           <div className="text-center flex">
             <img src={Banner} alt="" className="mx-auto mb-logo-GameCoin" />
-            <img src={Light} alt="" className="light" />
           </div>
           <div className="Hypermon_text mx-auto">
             <p>

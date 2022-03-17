@@ -29,6 +29,7 @@
   }
   .Hypermon__container {
     padding-top: 40%;
+    position: relative;
     .text-center{
       .mb-logo-GameCoin{
         align-self: center;
@@ -114,28 +115,32 @@
     }
     .light {
       width: 50%;
-      transform: translate(990px,-320px);
+      top: 26%;
+      left: 98%;
       position: absolute;
-      animation: light 0.3s ease-in infinite;
+      animation: light 1s ease-in infinite;
     }
     @keyframes light {
       from { opacity: 0} to { opacity: 1}
     }
     .fire {
-      width: 40%;
-      transform: translate(-200px,-300px);
+      width: 35%;
+      left: -5%;
+      top: 12%;
       position: absolute;
+      transform: rotate(-25deg);
+      animation: thunders 1.5s ease-out infinite;
     }
     .thunder {
       width: 10%;
-      top: 40%;
-      transform: translate(660px,-200px);
-      position: static;
-      animation: thunder 0.3s ease-in;
+      top: 19%;
+      position: absolute;
+      left: 53.5%;
+      animation: thunders 0.5s ease-in infinite;
     }
-    @keyframes thunder {
-      0% { width: 0%}
-      100% { width: 10% }
+    @keyframes thunders {
+      0% { opacity: 0.2; }
+      100% { opacity: 0.8; }
     }
   }
   
