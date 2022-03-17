@@ -47,44 +47,50 @@ const OurCharacter = () => {
             <p className="name-character">CHARMANDE</p>
             <div className="Ourcharacter__item">
               <div className="flex justify-center items-center">
-                <div>
-                  <img src={item1} alt="" />
+                <div className="item">
+                  <img className="scale" src={item1} alt="" />
                 </div>
                 <div>
-                  <img src={item2} alt="" />
+                  <img className="scale" src={item2} alt="" />
                 </div>
-                <div className="wrapper-star">
-                  <img className="start-img" src={star} alt="" />
-                </div>
-                <div>
-                  <img src={item3} alt="" />
+                <div  className="wrapper-star">
+                  <img src={star} alt="" />
                 </div>
                 <div>
-                  <img src={item4} alt="" />
+                  <img className="scale" src={item3} alt="" />
+                </div>
+                <div>
+                  <img className="scale" src={item4} alt="" />
                 </div>
               </div>
             </div>
 
             <div className="Charmande1 relative">
-              <img
-                className="mx-auto vector absolute  "
-                src={Vector}
-                alt=""
-              />
-              <img
-                className="mx-auto Charmande__img relative"
-                src={Charmande1}
-                alt=""
-              />
-              <img
-                className="fire__img"
-                src={Fire}
-                alt=""
-              />
-              <div className="character-properties">
-                <li>SPIT FILE</li>
-                <li>THUNDER</li>
-                <li>DISCHARG</li>
+              <div className="container">
+                <img
+                  className="fire__img"
+                  src={Fire}
+                  alt=""
+                />
+              </div>
+              <div className="container">
+                <img
+                  className="mx-auto vector absolute  "
+                  src={Vector}
+                  alt=""
+                />
+                <img
+                  className="mx-auto Charmande__img relative"
+                  src={Charmande1}
+                  alt=""
+                />
+              </div>
+              <div className="container">
+                <div className="character-properties">
+                  <li>SPIT FILE</li>
+                  <li>THUNDER</li>
+                  <li>DISCHARG</li>
+                </div>
               </div>
             </div>
             <div className="Ourcharacter_description">
