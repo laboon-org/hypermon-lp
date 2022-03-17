@@ -11,6 +11,7 @@ import star from "./img/charmande/star.png";
 import Charmande1 from "./img/Charmande1.png";
 import Vector from "./img/Vector.png";
 import Fire from "./img/fire.png";
+import fileLight from "./img/fireLight.png";
 import "./mobile.scss";
 import "./tablet.scss";
 import "../../../components/reveal.scss";
@@ -72,6 +73,9 @@ const OurCharacter = () => {
                   src={Fire}
                   alt=""
                 />
+                <div>
+                  <img src={fileLight} alt="" className="fireLight" />
+                </div>
               </div>
               <div className="container">
                 <img
