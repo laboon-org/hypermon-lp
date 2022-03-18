@@ -35,7 +35,7 @@ const index = () => {
         <div className="maincontainer" >
           <div>
             <div className="wrapper-text">
-              <div>
+              <div className="reveal item">
                 <span>1/2022</span>
                 <span> <span className="symbol-text">I&nbsp;</span> Step one</span>
                 <span>
@@ -44,7 +44,7 @@ const index = () => {
                   quo minus id quod maxime placeat facere.
                 </span>
               </div>
-              <div>
+              <div className="reveal item1">
                 <span>2/2022</span>
                 <span><span className="symbol-text">I&nbsp;</span>Step second</span>
                 <span>
@@ -53,7 +53,7 @@ const index = () => {
                   quo minus id quod maxime placeat facere.
                 </span>
               </div>
-              <div>
+              <div className="reveal item2">
                 <span>3/2022</span>
                 <span><span className="symbol-text">I&nbsp;</span>Step third</span>
                 <span>
@@ -62,7 +62,7 @@ const index = () => {
                   quo minus id quod maxime placeat facere.
                 </span>
               </div>
-              <div>
+              <div className="reveal item3">
                 <span>4/2022</span>
                 <span><span className="symbol-text">I&nbsp;</span>Step four</span>
                 <span>
@@ -71,7 +71,7 @@ const index = () => {
                   quo minus id quod maxime placeat facere.
                 </span>
               </div>
-              <div>
+              <div className="reveal item4">
                 <span>5/2022</span>
                 <span><span className="symbol-text">I&nbsp;</span>Step five</span>
                 <span>
@@ -82,7 +82,7 @@ const index = () => {
               </div>
             </div>
 
-            <img className="imgroad mx-auto" src={Road} alt="" />
+            <img className="imgroad mx-auto fadeUp" src={Road} alt="" />
             <img className="imgroad-responsive" src={road_responsive} alt="" />
           </div>
         </div>

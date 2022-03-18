@@ -18,7 +18,7 @@ const Hypermon = () => {
       <div className="container mx-auto ">
         <div className="Hypermon__container">
         <div>
-          <img src={Fire} alt="" className="fire"/>
+          <img src={Fire} alt="" className="fire mb-fire"/>
           </div>
           <div>
           <img src={Thunder} alt="" className="thunder mb-thunder"/>
