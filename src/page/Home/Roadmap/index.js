@@ -9,7 +9,19 @@ import "./mobile.scss";
 import "../../../components/reveal.scss";
 
 const index = () => {
-
+  window.addEventListener('scroll', roadFly);
+  function roadFly() {
+    const roadFly = document.querySelectorAll('.roadFly');
+    for (let i = 0; i < roadFly.length; i++) {
+      const windowWidth = window.innerWidth;
+      const roadFlyRight = roadFly[i].getBoundingClientRect().top;
+      if (roadFlyRight < windowWidth) {
+        roadFly[i].classList.add('road');
+      } else {
+        roadFly[i].classList.remove('road');
+      }
+    }
+  }
   return (
     <div
       id="road_map"
@@ -82,8 +94,8 @@ const index = () => {
               </div>
             </div>
 
-            <img className="imgroad mx-auto fadeUp" src={Road} alt="" />
-            <img className="imgroad-responsive" src={road_responsive} alt="" />
+            <img className="imgroad mx-auto roadFly" src={Road} alt="" />
+            <img className="imgroad-responsive roadFly" src={road_responsive} alt="" />
           </div>
         </div>
       </div>
