@@ -114,11 +114,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-        <div className="version">v0.1.5 - 20220303</div>
-=======
-        <div className="version">v0.1.6 - 20220224</div>
->>>>>>> develop
+        <div className="version ">v0.1.6 - 20220224</div>
       </div>
     </div>
   );
