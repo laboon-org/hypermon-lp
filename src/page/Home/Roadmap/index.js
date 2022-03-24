@@ -4,9 +4,24 @@ import roadmap from "./img/roadmap.png";
 import bg from "./img/bg.png";
 import road_responsive from "./img/road_develop.png";
 import Road from "./img/Road.png";
-import "./tablet.scss"
-import "./mobile.scss"
+import "./tablet.scss";
+import "./mobile.scss";
+import "../../../components/reveal.scss";
+
 const index = () => {
+  window.addEventListener('scroll', roadFly);
+  function roadFly() {
+    const roadFly = document.querySelectorAll('.roadFly');
+    for (let i = 0; i < roadFly.length; i++) {
+      const windowWidth = window.innerWidth;
+      const roadFlyRight = roadFly[i].getBoundingClientRect().top;
+      if (roadFlyRight < windowWidth) {
+        roadFly[i].classList.add('road');
+      } else {
+        roadFly[i].classList.remove('road');
+      }
+    }
+  }
   return (
     <div
       id="road_map"
@@ -20,9 +35,9 @@ const index = () => {
     >
       <div className="mx-auto main-wrapper">
         <div>
-          <img className="mx-auto header-name" src={roadmap} alt="" />
+          <img className="mx-auto header-name fadeUp" src={roadmap} alt="" />
         </div>
-        <div className="Roadmap__content mx-auto mt-10">
+        <div className="Roadmap__content mx-auto mt-10 contentFadeUp">
           <p>
             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
             impedit quo minus id quod maxime placeat facere possimus, omnis
@@ -32,7 +47,7 @@ const index = () => {
         <div className="maincontainer" >
           <div>
             <div className="wrapper-text">
-              <div>
+              <div className="reveal item">
                 <span>1/2022</span>
                 <span> <span className="symbol-text">I&nbsp;</span> Step one</span>
                 <span>
@@ -41,7 +56,7 @@ const index = () => {
                   quo minus id quod maxime placeat facere.
                 </span>
               </div>
-              <div>
+              <div className="reveal item1">
                 <span>2/2022</span>
                 <span><span className="symbol-text">I&nbsp;</span>Step second</span>
                 <span>
@@ -50,7 +65,7 @@ const index = () => {
                   quo minus id quod maxime placeat facere.
                 </span>
               </div>
-              <div>
+              <div className="reveal item2">
                 <span>3/2022</span>
                 <span><span className="symbol-text">I&nbsp;</span>Step third</span>
                 <span>
@@ -59,7 +74,7 @@ const index = () => {
                   quo minus id quod maxime placeat facere.
                 </span>
               </div>
-              <div>
+              <div className="reveal item3">
                 <span>4/2022</span>
                 <span><span className="symbol-text">I&nbsp;</span>Step four</span>
                 <span>
@@ -68,7 +83,7 @@ const index = () => {
                   quo minus id quod maxime placeat facere.
                 </span>
               </div>
-              <div>
+              <div className="reveal item4">
                 <span>5/2022</span>
                 <span><span className="symbol-text">I&nbsp;</span>Step five</span>
                 <span>
@@ -79,8 +94,8 @@ const index = () => {
               </div>
             </div>
 
-            <img className="imgroad mx-auto" src={Road} alt="" />
-            <img className="imgroad-responsive" src={road_responsive} alt="" />
+            <img className="imgroad mx-auto roadFly" src={Road} alt="" />
+            <img className="imgroad-responsive roadFly" src={road_responsive} alt="" />
           </div>
         </div>
       </div>

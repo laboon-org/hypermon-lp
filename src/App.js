@@ -6,7 +6,7 @@ import LoginPage from './LoginPage/LoginPage';
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App" style={{ overflow: "hidden", width: '100vw'}}>
         <Routes>
           <Route path="/" element={<PrivateRoute />}>
           </Route>

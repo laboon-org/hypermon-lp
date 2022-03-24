@@ -11,14 +11,29 @@ import star from "./img/charmande/star.png";
 import Charmande1 from "./img/Charmande1.png";
 import Vector from "./img/Vector.png";
 import Fire from "./img/fire.png";
-import "./mobile.scss"
-import "./tablet.scss"
+import fileLight from "./img/fireLight.png";
+import "./mobile.scss";
+import "./tablet.scss";
+import "../../../components/reveal.scss";
 
 const OurCharacter = () => {
+  window.addEventListener('scroll', fadeUp);
+  function fadeUp() {
+    const fadeUp = document.querySelectorAll('.fadeUp');
+    for (let i = 0; i < fadeUp.length; i++) {
+      const windowHeight = window.innerHeight;
+      const fadeUpTop = fadeUp[i].getBoundingClientRect().top;
+      if (fadeUpTop < windowHeight) {
+        fadeUp[i].classList.add('fly');
+      } else {
+        fadeUp[i].classList.remove('fly');
+      }
+    }
+  }
   return (
     <div id="our_character" style={{ backgroundColor: "#051435" }}>
       <div className="Ourcharacter mx-auto">
-        <div className="mx-auto pt-28">
+        <div className="mx-auto pt-28 fadeUp">
           <img className="mx-auto mb-name-Ourcharacter" src={textOur} alt="" />
         </div>
         <div
@@ -33,44 +48,53 @@ const OurCharacter = () => {
             <p className="name-character">CHARMANDE</p>
             <div className="Ourcharacter__item">
               <div className="flex justify-center items-center">
-                <div>
-                  <img src={item1} alt="" />
+                <div className="item">
+                  <img className="scale" src={item1} alt="" />
                 </div>
                 <div>
-                  <img src={item2} alt="" />
+                  <img className="scale" src={item2} alt="" />
                 </div>
-                <div className="wrapper-star">
-                  <img className="start-img" src={star} alt="" />
-                </div>
-                <div>
-                  <img src={item3} alt="" />
+                <div  className="wrapper-star">
+                  <img src={star} alt="" />
                 </div>
                 <div>
-                  <img src={item4} alt="" />
+                  <img className="scale" src={item3} alt="" />
+                </div>
+                <div>
+                  <img className="scale" src={item4} alt="" />
                 </div>
               </div>
             </div>
 
             <div className="Charmande1 relative">
-              <img
-                className="mx-auto vector absolute  "
-                src={Vector}
-                alt=""
-              />
-              <img
-                className="mx-auto Charmande__img relative"
-                src={Charmande1}
-                alt=""
-              />
-              <img
-                className="fire__img"
-                src={Fire}
-                alt=""
-              />
-              <div className="character-properties">
-                <li>SPIT FILE</li>
-                <li>THUNDER</li>
-                <li>DISCHARG</li>
+              <div className="container">
+                <img
+                  className="fire__img"
+                  src={Fire}
+                  alt=""
+                />
+                <div>
+                  <img src={fileLight} alt="" className="fireLight" />
+                </div>
+              </div>
+              <div className="container">
+                <img
+                  className="mx-auto vector absolute  "
+                  src={Vector}
+                  alt=""
+                />
+                <img
+                  className="mx-auto Charmande__img relative"
+                  src={Charmande1}
+                  alt=""
+                />
+              </div>
+              <div className="container">
+                <div className="character-properties">
+                  <li>SPIT FILE</li>
+                  <li>THUNDER</li>
+                  <li>DISCHARG</li>
+                </div>
               </div>
             </div>
             <div className="Ourcharacter_description">

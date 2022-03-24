@@ -27,11 +27,37 @@
         }
       }
     }
-  }
+    .Hypermon__container {
+      position: relative;
+      .mb-thunder {
+        top: 31%;
+        left: 55%;
+        position: absolute;
+      }
+      .mb-fire {
+        top: 22%;
+        position: absolute;
+      }
+    }
 }
 @media (max-width: 450px) {
   .mobile-Hypermon{
     background-image: url("../../../_assets/images/background_mobile.png");
 
   }
+  
+    .Hypermon__container {
+      position: relative;
+      .mb-thunder {
+        top: 9%;
+        left: 56%;
+        position: absolute;
+      }
+      .mb-fire {
+        top: -40%;
+        position: absolute;
+      }
+    }
+  
+}
 }

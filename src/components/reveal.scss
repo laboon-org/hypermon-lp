@@ -1,0 +1,54 @@
+  .fly {
+    animation: toTop 2s ease-out;
+  }
+  .contentFly {
+    animation: toTop 3s ease-out;
+  }
+  @keyframes toTop {
+    0% { transform: translate(0px, 100px); opacity: 0;  }
+    100% { transform: translate(0px, 0px); opacity: 1}
+  }
+  .detail {
+    animation-name: blinkItem;
+    animation-duration: 3s;
+  }
+  @keyframes blinkItem {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+   
+  }
+  .blink {
+    animation: blink 2.5s linear infinite;
+ }
+  @keyframes blink {
+    0% { opacity: 0.5; }
+    50% { opacity: 1;}
+    70% { opacity: 0.7};
+    100% { opacity: 0.5;}
+ }
+ .road {
+  animation: road 3s ease-in;
+  animation-delay: 3s;
+ }
+ @keyframes road {
+   0% {width: 100%; opacity: 0;}
+   30% { opacity: 0.3;}
+   50% { width: 100%; opacity: 0.5;}
+   80% {opacity: 0.8}
+   100% { width: 100%; opacity: 1 }
+ }
+  .item {
+    animation-delay: 0.1s;
+  }
+  .item1 {
+    animation-delay: 0.5s;
+  }
+  .item2 {
+    animation-delay: 1s;
+  }
+  .item3 {
+    animation-delay: 2s;
+  }
+  .item4 {
+    animation-delay: 3s;
+  }

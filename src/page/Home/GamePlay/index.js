@@ -7,10 +7,12 @@ import play from "./img/play.png";
 import Squitle32 from "./img/Squitle32.png";
 import Caterpie1a2 from "./img/Caterpie1a2.png";
 import Chuong1 from "./img/chuong1.png";
-import "./tablet.scss"
-import "./mobile.scss"
+import "./tablet.scss";
+import "./mobile.scss";
+import "../../../components/reveal.scss";
 
 const GamePlay = () => {
+
   return (
     <div
       id="game_play"
@@ -27,7 +29,7 @@ const GamePlay = () => {
         className="container mx-auto"
       >
         <div className="wrapper-Chuong1-Caterpie1a2">
-          <img className="absolute Chuong1" src={Chuong1} alt="" />
+          <img className="absolute Chuong1 skill" src={Chuong1} alt="" />
 
           <img className="absolute Caterpie1a2" src={Caterpie1a2} alt="" />
         </div>
@@ -38,7 +40,7 @@ const GamePlay = () => {
         </div>
         <div className="container mx-auto Gameplay__container ">
           <div>
-            <div>
+            <div className="fadeUp">
               <img className="mx-auto mb-header-gameplay" src={gameplay} alt="" />
             </div>
             <div className="mt-8 flex  Gameplay__container--wrapper">

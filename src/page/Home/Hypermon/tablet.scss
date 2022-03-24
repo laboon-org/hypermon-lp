@@ -23,5 +23,17 @@
     .Hypermon_text {
       width: 60%;
     }
+    .Hypermon__container {
+      position: relative;
+      .mb-thunder {
+        top: 15%;
+        left: 54.5%;
+        position: absolute;
+      }
+      .mb-fire {
+        top: 5%;
+        position: absolute;
+      }
+    }
   }
 }

@@ -15,16 +15,32 @@ import goldBText from "./img/Freetoearn.png";
 import bgCoint from "./img/XMLID_57_.png";
 import circle from "./img/circle.png";
 import bgafter from "./img/bgafter.jpg";
+import "../../../components/reveal.scss";
 
 const index = () => {
+  window.addEventListener('scroll', reveal);
+
+  function reveal() {
+    const reveal = document.querySelectorAll('.reveal');
+    for (let i = 0; i < reveal.length; i++) {
+      const windowHeight = window.innerHeight;
+      const revealTop = reveal[i].getBoundingClientRect().top;
+      if (revealTop < windowHeight) {
+        reveal[i].classList.add('detail');
+      } else {
+        reveal[i].classList.remove('detail');
+      }
+    }
+  }
+
   return (
     <div id="coin" className="GameCoin mx-auto" style={{ backgroundColor: "#051435" }}>
       <div className="container mx-auto pt-20">
         <div className="relative z-10">
           <div>
-            <img className="mx-auto mb-nameheader" src={GameCoin} alt="" />
+            <img className="mx-auto mb-nameheader fadeUp" src={GameCoin} alt="" />
           </div>
-          <div className="GameCoin__content mx-auto mt-10">
+          <div className="GameCoin__content mx-auto mt-10 contentFadeUp">
             <p>
               Nam libero tempore, cum soluta nobis est eligendi optio cumque
               nihil impedit quo minus id quod maxime placeat facere possimus,
@@ -36,7 +52,7 @@ const index = () => {
         <div>
           <div className="flex justify-around relative">
             <div className="mb-feature-left">
-              <div className="Gamecoin_exchange relative z-10">
+              <div className="Gamecoin_exchange relative z-10 reveal item2">
                 <img className="pl-8" src={vang} alt="" />
                 <div className="relative">
                   <img
@@ -50,7 +66,7 @@ const index = () => {
                 <img className="pt-10" src={exchange} alt="" />
               </div>
 
-              <div className="Gamecoin_exchange relative pt-28 z-10">
+              <div className="Gamecoin_exchange relative pt-28 z-10 reveal item3">
                 <img className="pl-8" src={kc} alt="" />
                 <div className="relative">
                   <img
@@ -72,7 +88,7 @@ const index = () => {
                     left: "50%",
                     transform: "translateX(-50%)"
                   }}
-                  className="absolute z-10 eggs"
+                  className="absolute z-10 reveal item1"
                   src={coin}
                   alt=""
                 />
@@ -82,14 +98,14 @@ const index = () => {
                     left: "50%",
                     transform: "translateX(-50%)"
                   }}
-                  className="absolute z-10 dot-start"
+                  className="absolute z-10 dot-start light"
                   src={bgCoint}
                   alt=""
                 />
               </div>
             </div>
             <div>
-              <div className="Gamecoin__free relative">
+              <div className="Gamecoin__free relative reveal item4">
                 <div className="flex justify-end pr-8">
                   <img src={goldB} alt="" />
                 </div>
