@@ -96,7 +96,7 @@ const Footer = () => {
             <div className="Footer__bottom pt-4">
               <div className="text-center">
                 <span>
-                  Copyright © 2022, all right reserved. Developed by{" "}
+                  Copyright © 2022, all right reserved. Developed by
                   <b>Laboon.org</b>
                 </span>
               </div>
