@@ -38,15 +38,15 @@ const index = () => {
           </div>
         </div>
 
+        <div className="mt-20 main-img-content">
+            <img src={Map} alt="" />
+          </div>
         <div className="space">
-        <div className="cloud1"  >
+          <div className="cloud1"  >
             <img src={Cloud2}  alt="" />
           </div>
           <div className="cloud"  >
             <img src={Cloud}  alt="" />
-          </div>
-          <div className="mt-20 main-img-content">
-            <img src={Map} alt="" />
           </div>
           <div className="cloud2"  >
             <img src={Cloud2}  alt="" />

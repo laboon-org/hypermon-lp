@@ -13,7 +13,7 @@ import Footer from "../../components/Footer";
 
 const HomePage = () => {
   return (
-    <div className="">
+    <div className="app">
       <Hypermon />
       <OurCharacter />
       <GamePlay />
