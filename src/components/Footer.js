@@ -89,8 +89,6 @@ const Footer = () => {
         <div className="Footer__inf flex justify-center">
           <div>
             <div className="flex items-center email">
-              {/* <IconEmail width="24px" height="24px" />
-              <span className="pl-4">hi@laboon.org</span> */}
             </div>
             <div className="Footer__bottom pt-4">
               <div className="text-center">
