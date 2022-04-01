@@ -37,7 +37,7 @@ const LoginPage = () => {
   useEventListener("keydown", handleSubmit, "Enter")
   return (
     <div className="w-full max-w-xs" style={{
-      position: "relative",
+      position: "fixed",
       top: "50vh",
       left: "50vw",
       transform: "translate(-50%,-50%)"
