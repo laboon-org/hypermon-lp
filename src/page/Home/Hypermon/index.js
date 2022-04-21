@@ -10,7 +10,7 @@ import Light from "./img/light.png";
 import Fire from "./img/fire.png";
 import Thunder from "./img/thunder.png";
 import "./tablet.scss"
-
+import { formatThreeDigits } from "../../../util/formatThreeDigits";
 const Hypermon = () => {
   return (
     <div id="hypermon" className="Hypermon mx-auto mobile-Hypermon">
@@ -39,9 +39,9 @@ const Hypermon = () => {
           <div className="Hypermon_text--bottom mt-8 mx-auto pb-16 mb-content-GameCoin">
             <div className="flex justify-around items-center mb-wrap-content-GameCoin">
               <div className="flex items-center mb-player-GameCoin">
-                <img src={number} className="first-img" alt="" />
-                <img src={number_player} className="first-img change-color hidden" alt="" />
-
+                <div className="style-text">
+                 {formatThreeDigits(1687825)}
+                </div>
                 <img src={totalPlayer} alt="" />
               </div>
               <div>

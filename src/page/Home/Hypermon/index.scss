@@ -10,6 +10,14 @@
   .unset-padding{
     padding: unset !important;
   }
+  .style-text {
+    margin-right: 5px;
+    font-size: 60px;
+    font-family: "G.I. Incognito";
+    background: linear-gradient(0deg, #00adeb -1.73%, #006bed 96.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   background-size: cover;
   background-position: center;
   .mb-wrap-content-GameCoin{
