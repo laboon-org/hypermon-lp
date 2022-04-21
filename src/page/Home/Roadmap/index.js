@@ -4,7 +4,6 @@ import roadmap from "./img/roadmap.png";
 import bg from "./img/bg.png";
 import road_responsive from "./img/road_develop.png";
 import Road from "./img/Road.png";
-import "./tablet.scss";
 import "./mobile.scss";
 import "../../../components/reveal.scss";
 
@@ -45,7 +44,7 @@ const index = () => {
           </p>
         </div>
         <div className="maincontainer" >
-          <div>
+          <div className="content-roadmap">
             <div className="wrapper-text">
               <div className="reveal item">
                 <span>1/2022</span>
@@ -94,7 +93,7 @@ const index = () => {
               </div>
             </div>
 
-            <img className="imgroad mx-auto roadFly" src={Road} alt="" />
+            {/* <img className="imgroad mx-auto roadFly" src={Road} alt="" /> */}
             <img className="imgroad-responsive roadFly" src={road_responsive} alt="" />
           </div>
         </div>

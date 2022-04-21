@@ -1,12 +1,73 @@
 .Roadmap {
-  .imgroad-responsive,
-  .wrapper-text {
-    display: none;
+  .content-roadmap{
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2%;
   }
+  .imgroad-responsive,
   .maincontainer {
     padding-top: 400px;
     padding-bottom: 205px;
   }
+    .imgroad {
+      display: none;
+    }
+    .main-wrapper {
+      padding-top: unset;
+    }
+    .imgroad-responsive {
+      padding-top: 30px;
+    }
+    .imgroad-responsive,
+    .wrapper-text {
+      display: flex;
+    }
+    .maincontainer {
+      padding-top: 109px;
+      padding-bottom: 30px;
+    }
+    span {
+      color: white;
+      display: block;
+      &:first-child {
+        font-size: 30px;
+        font-family: "G.I. Incognito";
+        background: linear-gradient(0deg, #00adeb -1.73%, #006bed 96.03%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &:nth-child(2) {
+        .symbol-text {
+          font-size: 20px;
+          font-family: "UTM Alter Gothic";
+          background: linear-gradient(180deg, #ee9559 0%, #f5e47e 50%, #f3c17c 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        display: flex;
+        font-size: 20px;
+        font-family: "UTM Alter Gothic";
+        background: linear-gradient(180deg, #ee9559 0%, #f5e47e 50%, #f3c17c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      &:last-child {
+        font-size: 13px;
+      }
+    }
+    .wrapper-text {
+      display: flex;
+      div {
+        padding-left: 10px;
+      }
+      .item1,
+      .item3{
+        position: relative;
+        bottom: -6vw;
+      }
+    }
+
   .header-name{
     padding-top: 100px;
   }
