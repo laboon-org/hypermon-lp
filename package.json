@@ -5,6 +5,7 @@
   "license": "MIT",
   "homepage": "./",
   "dependencies": {
+    "@apollo/client": "^3.5.10",
     "@babel/core": "^7.17.2",
     "@babel/preset-env": "^7.16.11",
     "@craco/craco": "^6.4.3",
@@ -17,6 +18,7 @@
     "@types/react-dom": "^17.0.11",
     "autoprefixer": "^9",
     "babel-loader": "^8.2.3",
+    "graphql": "^16.3.0",
     "node-sass": "^7.0.1",
     "postcss": "^7",
     "postcss-loader": "^4.0.3",

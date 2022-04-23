@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { PrivateRoute } from './components/PrivateRoute';
 import LoginPage from './LoginPage/LoginPage';
+import { useQuery, gql } from "@apollo/client";
 
 function App() {
   return (
