@@ -3,8 +3,23 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { PrivateRoute } from './components/PrivateRoute';
 import LoginPage from './LoginPage/LoginPage';
 import { useQuery, gql } from "@apollo/client";
-
+const query = gql`
+  {
+    HpmlbggamecoinItems{
+      items{
+        id
+        name
+        content{
+          feature
+          
+        }
+      }
+    }
+  }
+`;
 function App() {
+  const { loading, error, data } = useQuery(query);
+  console.log("test123",data?.HpmlbggamecoinItems)
   return (
     <Router>
       <div className="App" style={{ overflow: "hidden", width: '100vw'}}>

@@ -17,7 +17,7 @@ const authMiddleware = new ApolloLink((operation, forward) => {
   operation.setContext(({ headers = {} }) => ({
     headers: {
       ...headers,
-      token: process.env.REACT_APP_PREVIEW_TOKEN,
+      token: "Uxvp4Cz3LththANNRmB2CAtt",
       version: "draft",
     },
   }));
