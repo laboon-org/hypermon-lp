@@ -1,20 +1,27 @@
 import React from "react";
 import "./index.scss";
 import textOur from "./img/ourcharacterText.png";
-import bg from "./img/character11.png";
 import background from "./img/ourcharacter_background.png";
-import item1 from "./img/charmande/item1.png";
-import item2 from "./img/charmande/item2.png";
-import item3 from "./img/charmande/item3.png";
-import item4 from "./img/charmande/item4.png";
-import star from "./img/charmande/star.png";
-import Charmande1 from "./img/Charmande1.png";
+import poke1 from "./img/charmande/Caterpie.png";
+import poke2 from "./img/charmande/squitle.png";
+import poke3 from "./img/charmande/bulbasaur.png";
+import poke4 from "./img/charmande/pikachu.png";
+import star1 from "./img/starBig.png";
+import starMini from "./img/starMini.png";
+import Charmande1 from "./img/charmande.png";
 import Vector from "./img/Vector.png";
 import Fire from "./img/fire.png";
 import fileLight from "./img/fireLight.png";
 import "./mobile.scss";
 import "./tablet.scss";
 import "../../../components/reveal.scss";
+
+const fakeData = [
+  {id: 1, name: 'Caterpie', img: poke1, level: 3, },
+  {id: 2, name: 'Squitle', img: poke2, level: 4},
+  {id: 3, name: 'Bulbasaur', img: poke3, level: 4},
+  {id: 4, name: 'Pikachu', img: poke4, level: 5},
+]
 
 const OurCharacter = () => {
   window.addEventListener('scroll', fadeUp);
@@ -30,6 +37,17 @@ const OurCharacter = () => {
       }
     }
   }
+  function getStar(n){
+    var arr=[]
+    for(var i =0;i<n;i++)
+    {
+      arr.push(starMini)
+    }
+    return arr
+  }
+
+  const [poke, setPoke] = React.useState(fakeData);
+  
   return (
     <div id="our_character" style={{ backgroundColor: "#051435" }}>
       <div className="Ourcharacter mx-auto">
@@ -47,24 +65,43 @@ const OurCharacter = () => {
           <div className=" mx-auto" style={{ position: "relative" }}>
             <p className="name-character">CHARMANDE</p>
             <div className="Ourcharacter__item">
-              <div className="flex justify-center items-center">
-                <div className="item">
-                  <img className="scale" src={item1} alt="" />
+              <div className="flex justify-center items-center formBody">
+
+              {fakeData.filter(e => e.id <= fakeData.length/2).map(item => (
+                <div className="formCard"  onClick={() => setPoke(item)}>
+                  <div className="formName">
+                    <div className="formStar">
+                      {getStar(item.level).map(item => (
+                        <img src={starMini} alt=""  className="starItem"/>
+                      ))}
+                    </div>
+                      <p className="nameItem">{item.name}</p>
+                  </div>
+                  <img className="scale item-style" src={item.img} alt="" />
                 </div>
-                <div>
-                  <img className="scale" src={item2} alt="" />
-                </div>
+              ))}
+              
                 <div  className="wrapper-star">
-                  <img src={star} alt="" />
+                  {getStar(poke.level).map(item => (
+                    <img src={star1} alt="" className="star" />
+                  ))}
                 </div>
-                <div>
-                  <img className="scale" src={item3} alt="" />
+
+              {fakeData.filter(e => (e.id > fakeData.length/2)).map(item => (
+                <div className="formCard"  onClick={() => setPoke(item)}>
+                  <div className="formName">
+                    <div className="formStar">
+                      {getStar(item.level).map(item => (
+                        <img src={starMini} alt=""  className="starItem"/>
+                      ))}
+                    </div>
+                      <p className="nameItem">{item.name}</p>
+                    </div>
+                  <img className="scale item-style" src={item.img} alt="" />
                 </div>
-                <div>
-                  <img className="scale" src={item4} alt="" />
-                </div>
-              </div>
+              ))}
             </div>
+          </div>
 
             <div className="Charmande1 relative">
               <div className="container">
@@ -85,7 +122,7 @@ const OurCharacter = () => {
                 />
                 <img
                   className="mx-auto Charmande__img relative"
-                  src={Charmande1}
+                  src={poke.id === 1 ? poke1 : (poke.id === 2 ? poke2 : ( poke.id === 3 ? poke3 : (poke.id  === 4 ? poke4 : Charmande1)))}
                   alt=""
                 />
               </div>

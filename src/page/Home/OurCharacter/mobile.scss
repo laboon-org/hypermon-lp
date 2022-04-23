@@ -19,6 +19,9 @@
           }
         }
       }
+      .Charmande__img {
+        margin-top: -40%;
+      }
     }
     .Ourcharacter_description {
       span {
@@ -27,6 +30,9 @@
           width: 80% !important;
         }
       }
+    }
+    .nameItem {
+      font-size: 14px;
     }
   }
 }
@@ -57,5 +63,11 @@
         }
       }
     }
+    .formCard {
+      .nameItem {
+        font-size: 10px;
+      }
+    }
+    
   }
 }
