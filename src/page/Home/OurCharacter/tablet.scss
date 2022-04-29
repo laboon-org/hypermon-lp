@@ -4,6 +4,7 @@
     .name-character {
       top: 16%;
     }
+
   }
 }
 // tablet responsive
@@ -14,7 +15,7 @@
     }
     .name-character {
       font-size: 14px;
-      top: 15%;
+      top: 13.5%;
     }
     .Charmande1 {
       margin-top: -20%;
@@ -22,8 +23,20 @@
         right: 16%;
       }
     }
-      .Charmande1 {
-        margin-top: 0%;
+    .Charmande1 {
+      margin-top: 0%;
+      .Charmande__img {
+        margin-top: -100px !important;
       }
+    }
+    .wrapper-star {
+    .star {
+      margin-right: 10px;
+      width: 15%  !important;
+      }
+    }
+    .nameItem {
+      font-size: 14px !important;
+    }
   }
 }

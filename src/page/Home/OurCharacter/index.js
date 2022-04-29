@@ -1,27 +1,32 @@
 import React from "react";
 import "./index.scss";
-import textOur from "./img/ourcharacterText.png";
-import background from "./img/ourcharacter_background.png";
-import poke1 from "./img/charmande/Caterpie.png";
-import poke2 from "./img/charmande/squitle.png";
-import poke3 from "./img/charmande/bulbasaur.png";
-import poke4 from "./img/charmande/pikachu.png";
-import star1 from "./img/starBig.png";
 import starMini from "./img/starMini.png";
 import Charmande1 from "./img/charmande.png";
-import Vector from "./img/Vector.png";
 import Fire from "./img/fire.png";
 import fileLight from "./img/fireLight.png";
 import "./mobile.scss";
 import "./tablet.scss";
 import "../../../components/reveal.scss";
+import { gql, useQuery } from "@apollo/client";
 
-const fakeData = [
-  {id: 1, name: 'Caterpie', img: poke1, level: 3, },
-  {id: 2, name: 'Squitle', img: poke2, level: 4},
-  {id: 3, name: 'Bulbasaur', img: poke3, level: 4},
-  {id: 4, name: 'Pikachu', img: poke4, level: 5},
-]
+const query = gql`
+{
+  HpmlbgourcharacterItems{
+    items{
+      id,
+      name,
+      content{
+        title,
+        describe,
+        image,
+        pokedex,
+        Star{
+          filename,
+        }
+      }
+    }
+  }
+}`;
 
 const OurCharacter = () => {
   window.addEventListener('scroll', fadeUp);
@@ -37,6 +42,7 @@ const OurCharacter = () => {
       }
     }
   }
+
   function getStar(n){
     var arr=[]
     for(var i =0;i<n;i++)
@@ -45,63 +51,74 @@ const OurCharacter = () => {
     }
     return arr
   }
-
-  const [poke, setPoke] = React.useState(fakeData);
+  
+  const { data } = useQuery(query);
+  const story = data?.HpmlbgourcharacterItems;
+  const [poke, setPoke] = React.useState();
   
   return (
     <div id="our_character" style={{ backgroundColor: "#051435" }}>
       <div className="Ourcharacter mx-auto">
         <div className="mx-auto pt-28 fadeUp">
-          <img className="mx-auto mb-name-Ourcharacter" src={textOur} alt="" />
+          <img className="mx-auto mb-name-Ourcharacter" src={story?.items[0].content.image[1].img.filename} alt="" />
         </div>
         <div
           style={{
-            backgroundImage: `url(${background})`,
+            backgroundImage: `url(${story?.items[0].content.image[0].img.filename})`,
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
           }}
           className="container-full mx-auto"
         >
           <div className=" mx-auto" style={{ position: "relative" }}>
-            <p className="name-character">CHARMANDE</p>
+          {poke !== undefined ? (story?.items[0].content.pokedex.filter(e => e === poke).map(item => (
+            <p className="name-character">{item.name}</p>
+          ))) : <p className="name-character">CHARMANDE</p> }
             <div className="Ourcharacter__item">
               <div className="flex justify-center items-center formBody">
 
-              {fakeData.filter(e => e.id <= fakeData.length/2).map(item => (
-                <div className="formCard"  onClick={() => setPoke(item)}>
+              {story?.items[0].content.pokedex.filter(e => e.Id <= story?.items[0].content.pokedex.length/2).map(item => (
+                <div className="formCard" style={{background:`${item.color}`}} onClick={() => setPoke(item)}>
                   <div className="formName">
-                    <div className="formStar">
-                      {getStar(item.level).map(item => (
-                        <img src={starMini} alt=""  className="starItem"/>
+                    <div className="formStar" style={{ width: '20%'}}>
+                      {getStar(item.starNum).map(item => (
+                        <img src={story?.items[0].content.Star[0].filename} alt=""  className="starItem" />
                       ))}
                     </div>
                       <p className="nameItem">{item.name}</p>
-                  </div>
-                  <img className="scale item-style" src={item.img} alt="" />
-                </div>
-              ))}
-              
+                    </div>
+                  <img className="scale item-style" src={item.Img.filename} alt="" />
+                </div>))}
+
+              {poke !== undefined ? (story?.items[0].content.pokedex.filter(e => e === poke).map(item => (
                 <div  className="wrapper-star">
-                  {getStar(poke.level).map(item => (
-                    <img src={star1} alt="" className="star" />
+                  {getStar(item.starNum).map(item => (
+                    <img src={story?.items[0].content.Star[0].filename} alt="" className="star" />
                   ))}
                 </div>
+                ))
+              ) : (
+                <div  className="wrapper-star">
+                  {getStar(5).map(item => (
+                    <img src={story?.items[0].content.Star[0].filename} alt="" className="star" />
+                  ))}
+                </div>
+              )}
 
-              {fakeData.filter(e => (e.id > fakeData.length/2)).map(item => (
-                <div className="formCard"  onClick={() => setPoke(item)}>
+              {story?.items[0].content.pokedex.filter(e => (e.Id > story?.items[0].content.pokedex.length/2)).map(item => (
+                <div className="formCard" style={{background:`${item.color}`}} onClick={() => setPoke(item)}>
                   <div className="formName">
-                    <div className="formStar">
-                      {getStar(item.level).map(item => (
-                        <img src={starMini} alt=""  className="starItem"/>
+                    <div className="formStar" style={{ width: '20%'}}>
+                      {getStar(item.starNum).map(item => (
+                        <img src={story?.items[0].content.Star[0].filename} alt=""  className="starItem" />
                       ))}
                     </div>
                       <p className="nameItem">{item.name}</p>
                     </div>
-                  <img className="scale item-style" src={item.img} alt="" />
-                </div>
-              ))}
+                  <img className="scale item-style" src={item.Img.filename} alt="" />
+                </div>))}
+              </div>
             </div>
-          </div>
 
             <div className="Charmande1 relative">
               <div className="container">
@@ -117,12 +134,12 @@ const OurCharacter = () => {
               <div className="container">
                 <img
                   className="mx-auto vector absolute  "
-                  src={Vector}
+                  src={story?.items[0].content.image[2].img.filename}
                   alt=""
                 />
                 <img
                   className="mx-auto Charmande__img relative"
-                  src={poke.id === 1 ? poke1 : (poke.id === 2 ? poke2 : ( poke.id === 3 ? poke3 : (poke.id  === 4 ? poke4 : Charmande1)))}
+                  src={poke === undefined ? Charmande1 : story?.items[0].content.pokedex.filter(e => e === poke).map(item => (item.Img.filename))}
                   alt=""
                 />
               </div>
@@ -136,20 +153,16 @@ const OurCharacter = () => {
             </div>
             <div className="Ourcharacter_description">
               <span>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip
+                {data?.HpmlbgourcharacterItems.items[0].content.describe}
               </span>
               <span>
-                2.630 HPM
+                {poke === undefined ? '2.320 HPM' :story?.items[0].content.pokedex.filter(e => e === poke).map(item => (item.price))}
               </span>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   );
 };
 

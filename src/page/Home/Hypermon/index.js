@@ -11,64 +11,82 @@ import Fire from "./img/fire.png";
 import Thunder from "./img/thunder.png";
 import "./tablet.scss"
 import { formatThreeDigits } from "../../../util/formatThreeDigits";
+import { gql, useQuery } from "@apollo/client";
+
+const query = gql` 
+{
+  HpmlbghomeItems{
+    items{
+      id,
+      content{
+        describe,
+        address,
+        contract,
+        coming,
+        total_player,
+        image,
+      }
+    }
+  }
+}`;
+
 const Hypermon = () => {
+  const { data } = useQuery(query);
+  let story = data?.HpmlbghomeItems;
+
   return (
     <div id="hypermon" className="Hypermon mx-auto mobile-Hypermon">
       <Header />
       <div className="container mx-auto ">
         <div className="Hypermon__container">
         <div>
-          <img src={Fire} alt="" className="fire mb-fire"/>
+          <img src={story?.items[0].content.image[0].img.filename} alt="" className="fire mb-fire"/>
           </div>
           <div>
-          <img src={Thunder} alt="" className="thunder mb-thunder"/>
+          <img src={story?.items[0].content.image[2].img.filename} alt="" className="thunder mb-thunder"/>
           </div>
           <div>
-            <img src={Light} alt="" className="light" />
+            <img src={story?.items[0].content.image[1].img.filename} alt="" className="light" />
           </div>
           <div className="text-center flex">
-            <img src={Banner} alt="" className="mx-auto mb-logo-GameCoin" />
+            <img src={story?.items[0].content.image[3].img.filename} alt="" className="mx-auto mb-logo-GameCoin" />
           </div>
           <div className="Hypermon_text mx-auto">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
+            <p>{story?.items[0].content.describe}</p>
           </div>
           <div className="Hypermon_text--bottom mt-8 mx-auto pb-16 mb-content-GameCoin">
             <div className="flex justify-around items-center mb-wrap-content-GameCoin">
               <div className="flex items-center mb-player-GameCoin">
                 <div className="style-text">
-                 {formatThreeDigits(1687825)}
+                 {formatThreeDigits(story?.items[0].content.total_player)}
                 </div>
-                <img src={totalPlayer} alt="" />
+                <img src={story?.items[0].content.image[4].img.filename} alt="" />
               </div>
               <div>
                 <div className="Hypermon_contract--top">
-                  <span>$THG Contract Address</span>
+                  <span>{story?.items[0].content.address}</span>
                 </div>
                 <div className=" Hypermon_contract mt-2">
                   <div className="flex ">
                     <div className=" Hypermon_contract--left">
-                      <span>AVAX</span>
+                      <span>{story?.items[0].content.contract}</span>
                     </div>
                     <div className="px-8">
-                      <span>Coming Soon!</span>
+                      <span>{story?.items[0].content.coming}</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div className="Hypermon_contract--top">
-                  <span>$THG Contract Address</span>
+                  <span>{story?.items[0].content.address}</span>
                 </div>
                 <div className="flex Hypermon_contract mt-2">
                   <div className=" Hypermon_contract--left">
-                    <span>AVAX</span>
+                    <span>{story?.items[0].content.contract}</span>
                   </div>
                   <div className="px-8">
-                    <span>Coming Soon!</span>
+                    <span>{story?.items[0].content.coming}</span>
                   </div>
                 </div>
               </div>

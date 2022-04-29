@@ -10,48 +10,50 @@ import item5 from "./img/item5.png";
 import "./tablet.scss";
 import "./mobile.scss";
 import "../../../components/reveal.scss";
+import { gql, useQuery } from "@apollo/client";
+
+const query = gql`
+{
+  HpmlbgourpartnerItems{
+    items{
+      id,
+      content{
+        describe,
+        img,
+        partner,
+      }
+    }
+  }
+}`;
 
 const index = () => {
-  
+  const { data } =useQuery(query);
+  let story = data?.HpmlbgourpartnerItems;
+
   return (
     <div
       id="out_partner"
       className="Ourpartner mx-auto"
       style={{
         backgroundColor: "#051435",
-        backgroundImage: `url(${bg})`,
+        backgroundImage: `url(${story?.items[0].content.img[1].img.filename})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
     >
       <div className="container mx-auto pt-20 fadeUp">
         <div>
-          <img className="mx-auto mb-headername" src={ourpartner} alt="" />
+          <img className="mx-auto mb-headername" src={story?.items[0].content.img[0].img.filename} alt="" />
         </div>
         <div className="Ourpartner__content mx-auto mt-10">
-          <p>
-            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-            impedit quo minus id quod maxime placeat facere possimus, omnis
-            voluptas assumenda est, omnis dolor repellendus.
-          </p>
+          <p>{story?.items[0].content.describe}</p>
         </div>
         <div className="pt-16 pb-16">
           <div className="flex justify-between items-center wrapper-img">
-            <div>
-              <img src={item1} alt="" />
-            </div>
-            <div>
-              <img src={item2} alt="" />
-            </div>
-            <div>
-              <img src={item3} alt="" />
-            </div>
-            <div>
-              <img src={item4} alt="" />
-            </div>
-            <div>
-              <img src={item5} alt="" />
-            </div>
+            {story?.items[0].content.partner.map(item => (
+              <div>
+                <img src={item.img.filename} alt="" />
+            </div>))}
           </div>
         </div>
       </div>

@@ -1,17 +1,26 @@
 import React from "react";
 import "./index.scss";
-import bg from "./img/bg.png";
-import gameplay from "./img/gameplay.png";
-import title from "./img/title.png";
-import play from "./img/play.png";
-import Squitle32 from "./img/Squitle32.png";
-import Caterpie1a2 from "./img/Caterpie1a2.png";
-import Chuong1 from "./img/chuong1.png";
 import "./tablet.scss";
 import "./mobile.scss";
 import "../../../components/reveal.scss";
+import { gql, useQuery } from "@apollo/client";
+
+const query = gql`
+{
+  HpmlbegameplayItems{
+    items{
+      id,
+      content{
+        describe,
+        image,
+      }
+    }
+  }
+}` ;
 
 const GamePlay = () => {
+  const { data } = useQuery(query);
+  const story = data?.HpmlbegameplayItems;
 
   return (
     <div
@@ -21,7 +30,7 @@ const GamePlay = () => {
     >
       <div
         style={{
-          backgroundImage: `url(${bg})`,
+          backgroundImage: `url(${story?.items[0].content.image[6].img.filename})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           //   height: 1000,
@@ -29,38 +38,30 @@ const GamePlay = () => {
         className="container mx-auto"
       >
         <div className="wrapper-Chuong1-Caterpie1a2">
-          <img className="absolute Chuong1 skill" src={Chuong1} alt="" />
+          <img className="absolute Chuong1 skill" src={story?.items[0].content.image[3].img.filename} alt="" />
 
-          <img className="absolute Caterpie1a2" src={Caterpie1a2} alt="" />
+          <img className="absolute Caterpie1a2" src={story?.items[0].content.image[4].img.filename} alt="" />
         </div>
         <div>
-          <img className="absolute Squitle32" src={Squitle32} alt="" />
+          <img className="absolute Squitle32" src={story?.items[0].content.image[2].img.filename} alt="" />
         </div>
         <div>
         </div>
         <div className="container mx-auto Gameplay__container ">
           <div>
             <div className="fadeUp">
-              <img className="mx-auto mb-header-gameplay" src={gameplay} alt="" />
+              <img className="mx-auto mb-header-gameplay" src={story?.items[0].content.image[0].img.filename} alt="" />
             </div>
             <div className="mt-8 flex  Gameplay__container--wrapper">
               <div className="flex-1 mb-description-gameplay">
                 <div>
-                  <img className="mx-auto" src={title} alt="" />
+                  <img className="mx-auto" src={story?.items[0].content.image[5].img.filename} alt="" />
                 </div>
                 <div className="Gameplay_content mt-8 mx-auto">
-                  <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem
-                    aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta sunt explicabo. Nemo
-                    enim ipsam voluptatem quia voluptas sit aspernatur aut odit
-                    aut fugit, sed quia consequuntur magni dolores eos qui
-                    ratione voluptatem sequi nesciunt.{" "}
-                  </p>
+                  <p>{story?.items[0].content.describe}</p>
                 </div>
                 <div className="pt-16 mb-play-icon">
-                  <img className="mx-auto" src={play} alt="" />
+                  <img className="mx-auto" src={story?.items[0].content.image[1].img.filename} alt="" />
                 </div>
               </div>
               <div className="flex-1"></div>

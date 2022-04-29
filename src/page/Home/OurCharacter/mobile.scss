@@ -6,7 +6,7 @@
     }
     .name-character {
       font-size: 12px;
-      top: 13% !important;
+      top: 14.5% !important;
     }
     .Charmande1 {
       .character-properties {
@@ -20,7 +20,7 @@
         }
       }
       .Charmande__img {
-        margin-top: -40%;
+        margin-top: -30% !important;
       }
     }
     .Ourcharacter_description {
@@ -34,6 +34,18 @@
     .nameItem {
       font-size: 14px;
     }
+    .formCard {
+      height: 100px;
+    }
+    .wrapper-star {
+      .star {
+        margin-right: 5px;
+        width: 14%  !important;
+        }
+      }
+      .nameItem {
+        font-size: 10px !important;
+      }
   }
 }
 // small mobile responsive
@@ -64,10 +76,18 @@
       }
     }
     .formCard {
+      height: 70px;
       .nameItem {
-        font-size: 10px;
+        font-size: 8px !important;
       }
     }
+    .wrapper-star {
+      .star {
+        margin-right: 5px;
+        width: 10%  !important;
+        }
+      }
+  
     
   }
 }

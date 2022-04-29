@@ -5,4 +5,20 @@ iframe {
 html{
   scroll-behavior: smooth;
 }
+.titleStyle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    text-align: center;
+    font-family: 'G.I. Incognito';
+    background: linear-gradient(180deg, #EE9559 30%, #F5E47E 50%, #F3C17C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px black;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
 
