@@ -124,7 +124,7 @@ const OurCharacter = () => {
               <div className="container">
                 <img
                   className="fire__img"
-                  src={Fire}
+                  src={poke === undefined ? Fire : story?.items[0].content.pokedex.filter(e => e === poke).map(item => (item.Attribute[0].img.filename))}
                   alt=""
                 />
                 <div>
