@@ -55,7 +55,7 @@ const GamePlay = () => {
             <div className="mt-8 flex  Gameplay__container--wrapper">
               <div className="flex-1 mb-description-gameplay">
                 <div>
-                  <img className="mx-auto" src={story?.items[0].content.image[5].img.filename} alt="" />
+                  <img className="gameplay-board mx-auto" src={story?.items[0].content.image[5].img.filename} alt="" />
                 </div>
                 <div className="Gameplay_content mt-8 mx-auto">
                   <p>{story?.items[0].content.describe}</p>

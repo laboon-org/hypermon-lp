@@ -18,6 +18,15 @@
     position: relative;
     z-index: 10;
   }
+
+  .gameplay-board {
+    cursor: pointer;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   .Gameplay_content {
     width: 561px;
     height: 94px;
@@ -33,6 +42,16 @@
       letter-spacing: 0.05em;
 
       color: #ffffff;
+    }
+  }
+
+  .mb-play-icon {
+    img {
+      cursor: pointer;
+      opacity: 0.8;
+      &:hover {
+        opacity: 1;
+      }
     }
   }
   .Caterpie1a2 {

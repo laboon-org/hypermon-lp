@@ -54,6 +54,7 @@ const OurCharacter = () => {
   
   const { data } = useQuery(query);
   const story = data?.HpmlbgourcharacterItems;
+  console.log(story);
   const [poke, setPoke] = React.useState();
   
   return (
@@ -145,9 +146,18 @@ const OurCharacter = () => {
               </div>
               <div className="container">
                 <div className="character-properties">
-                  <li>SPIT FILE</li>
-                  <li>THUNDER</li>
-                  <li>DISCHARG</li>
+                  {poke === undefined 
+                  ? 
+                  <>
+                    <li>Blaze</li>
+                    <li>Flame Tail</li>
+                    <li>Reprisal</li>
+                  </>
+                  :
+                  story?.items[0].content.pokedex.find(e => e === poke).Attribute[0].name.map(attr => (
+                    <li>{attr.attribute}</li>
+                  ))
+                }
                 </div>
               </div>
             </div>

@@ -51,18 +51,31 @@
     font-size: 25px;
     line-height: 40px;
     font-family: "UTM Alter Gothic";
-    .dot {
-      height: 8px;
-      width: 8px;
-      background-color: rgb(255, 255, 255);
-      border-radius: 50%;
-      display: inline-block;
-      margin-right: 8px;
+    li {
+      cursor: pointer;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .dot {
+        height: 8px;
+        width: 8px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 8px;
+      }
     }
+    
   }
   .bgafter {
     z-index: 0;
     top: -152px;
     left: 0;
   }
+
+
 }
+

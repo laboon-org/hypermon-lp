@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./index.scss";
 import "./mobile.scss"
 import number_player from "./img/number_player.png";
@@ -31,8 +31,22 @@ const query = gql`
 }`;
 
 const Hypermon = () => {
-  const { data } = useQuery(query);
+  const [playerCount, setPlayerCount] = useState(0);
+  const { data } = useQuery(query, {
+    onCompleted: (data) => {
+      setPlayerCount(parseInt(data.HpmlbghomeItems.items[0].content.total_player))
+    }
+  });
   let story = data?.HpmlbghomeItems;
+  
+
+  useEffect(() => {
+    let timer = setInterval(() => {
+      setPlayerCount((playerCount) => playerCount + 1);
+    }, 5000)
+
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div id="hypermon" className="Hypermon mx-auto mobile-Hypermon">
@@ -58,13 +72,13 @@ const Hypermon = () => {
             <div className="flex justify-around items-center mb-wrap-content-GameCoin">
               <div className="flex items-center mb-player-GameCoin">
                 <div className="style-text">
-                 {formatThreeDigits(story?.items[0].content.total_player)}
+                  {formatThreeDigits(playerCount)}
                 </div>
                 <img src={story?.items[0].content.image[4].img.filename} alt="" />
               </div>
               <div>
                 <div className="Hypermon_contract--top">
-                  <span>{story?.items[0].content.address}</span>
+                  <span><b>{story?.items[0].content.address}</b> Contract Address</span>
                 </div>
                 <div className=" Hypermon_contract mt-2">
                   <div className="flex ">
@@ -72,21 +86,23 @@ const Hypermon = () => {
                       <span>{story?.items[0].content.contract}</span>
                     </div>
                     <div className="px-8">
-                      <span>{story?.items[0].content.coming}</span>
+                      {/* <span>{story?.items[0].content.coming}</span> */}
+                      <span>0xvd0w314324wfsjfgrf086349dhd86301</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div className="Hypermon_contract--top">
-                  <span>{story?.items[0].content.address}</span>
+                  <span><b>{story?.items[0].content.address}</b> Contract Address</span>
                 </div>
                 <div className="flex Hypermon_contract mt-2">
                   <div className=" Hypermon_contract--left">
-                    <span>{story?.items[0].content.contract}</span>
+                    <span>{story?.items[0].content.contract} </span>
                   </div>
                   <div className="px-8">
-                    <span>{story?.items[0].content.coming}</span>
+                    {/* <span>{story?.items[0].content.coming}</span> */}
+                    <span>0xvd0w314324wfsjfgrf086349dhd86301</span>
                   </div>
                 </div>
               </div>

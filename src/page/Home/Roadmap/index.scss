@@ -39,14 +39,14 @@
       }
       &:nth-child(2) {
         .symbol-text {
-          font-size: 20px;
+          font-size: 22px;
           font-family: "UTM Alter Gothic";
           background: linear-gradient(180deg, #ee9559 0%, #f5e47e 50%, #f3c17c 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
         display: flex;
-        font-size: 20px;
+        font-size: 22px;
         font-family: "UTM Alter Gothic";
         background: linear-gradient(180deg, #ee9559 0%, #f5e47e 50%, #f3c17c 100%);
         -webkit-background-clip: text;
@@ -64,7 +64,7 @@
       .item1,
       .item3{
         position: relative;
-        bottom: -6vw;
+        bottom: -4vw;
       }
     }
 

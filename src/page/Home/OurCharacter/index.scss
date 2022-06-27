@@ -72,6 +72,7 @@
     }
     .scale:hover {
       transform: scale(1.5);
+      cursor: pointer;
     }
   }
 
@@ -80,7 +81,7 @@
       .Charmande__img {
       z-index: 2;
       width: 80%;
-      margin-top: -10% !important;
+      margin-top: -18% !important;
       animation: mov 2s alternate infinite;
     }
     @keyframes mov {

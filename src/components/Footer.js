@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div
       className="Footer mx-auto"
-      style={{ backgroundColor: "#000000", height: 659 }}
+      style={{ backgroundColor: "#000000", height: 700 }}
     >
       <div className="container mx-auto">
         <div className="pt-28">
@@ -95,7 +95,7 @@ const Footer = () => {
               <div className="text-center">
                 <span>
                   Copyright © 2022, all right reserved. Developed by&nbsp;
-                  <b>Laboon.org</b>
+                  <a href="https://laboon.org/"><b>Laboon.org</b></a>
                 </span>
               </div>
             </div>
@@ -104,17 +104,17 @@ const Footer = () => {
         <div className="">
           <div className="flex justify-center pt-8">
             <div>
-              <IconFb width="24px" height="24px" />
+              <IconFb className="w-10 h-10" />
             </div>
             <div className="px-8">
-              <IconTele width="24px" height="24px" />
+              <IconTele className="w-10 h-10" />
             </div>
             <div>
-              <IconTw width="24px" height="24px" />
+              <IconTw className="w-10 h-10" />
             </div>
           </div>
         </div>
-        <div className="version ">v0.1.6 - 20220224</div>
+        <div className="version mt-10">v0.1.6 - 20220224</div>
       </div>
     </div>
   );

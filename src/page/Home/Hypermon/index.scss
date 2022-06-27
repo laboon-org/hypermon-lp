@@ -1,6 +1,8 @@
 .Hypermon {
-  min-height: 100vh;
+  //min-height: 100vh;
+  max-width: 1880px;
   background-image: url("./img/bg.png");
+  overflow: hidden;
   .container {
     max-width: 1200px;
   }
@@ -15,6 +17,7 @@
     font-size: 60px;
     font-family: "G.I. Incognito";
     background: linear-gradient(0deg, #00adeb -1.73%, #006bed 96.03%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -69,6 +72,7 @@
         line-height: 20px;
         letter-spacing: 0.05em;
         background: -webkit-linear-gradient(#00adeb, #006bed);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -87,13 +91,19 @@
     }
 
     .Hypermon_contract--top {
+
       span {
         color: white;
         font-family: "UTM Alter Gothic";
         font-style: normal;
         font-weight: normal;
-        font-size: 15px;
+        font-size: 20px;
         line-height: 25px;
+        
+        b {
+          font-size: 23px;
+          color: #E6B86A;
+        }
       }
     }
     .Hypermon_contract {
@@ -123,27 +133,28 @@
     }
     .light {
       width: 50%;
-      top: 26%;
+      top: 26.5%;
       left: 98%;
       position: absolute;
+      transform: rotate(11deg);
       animation: light 1s ease-in infinite;
     }
     @keyframes light {
       from { opacity: 0} to { opacity: 1}
     }
     .fire {
-      width: 35%;
-      left: -5%;
-      top: 12%;
+      width: 40%;
+      left: -6%;
+      top: 9%;
       position: absolute;
-      transform: rotate(-25deg);
+      transform: rotate(-30deg);
       animation: thunders 1.5s ease-out infinite;
     }
     .thunder {
-      width: 10%;
-      top: 19%;
+      width: 9%;
+      top: 20%;
       position: absolute;
-      left: 53.5%;
+      left: 55%;
       animation: thunders 0.5s ease-in infinite;
     }
     @keyframes thunders {

@@ -39,9 +39,19 @@
     }
   }
   .wrapper-imgcenter {
-    img {
+    .core-wrap {
       left: 50%;
       transform: translateX(-50%);
+      width: 700px;
+      margin-top: 0px;
+      margin-left: -20px;
+    }
+    img {
+      width: 100%;
+      
+    }
+    .core-img {
+      animation: rotation 10s infinite linear;
     }
   }
   .Gamecoin_exchange {
@@ -62,3 +72,13 @@
     line-height: 40px;
   }
 }
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(359deg);
+  }
+}
+

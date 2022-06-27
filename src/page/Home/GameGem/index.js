@@ -5,6 +5,8 @@ import "./tablet.scss";
 import "../../../components/reveal.scss";
 import { gql, useQuery } from "@apollo/client";
 
+import IMG_CORE from '../../../_assets/images/core.png'
+
 const query = gql`
 {
   HpmlbggamegemItems{
@@ -84,21 +86,23 @@ const index = () => {
               style={{ zIndex: 11 }}
             >
               <div className="wrapper-imgcenter">
-                <img
-                  className="absolute z-10 reveal item"
-                  src={story?.items[0].content.img[1].img.filename}
-                  alt=""
-                />
-                <img
-                  className="absolute light"
-                  src={story?.items[0].content.img[2].img.filename}
-                  alt=""
-                />
-                <img
-                  className="absolute light"
-                  src={story?.items[0].content.img[3].img.filename}
-                  alt=""
-                />
+                <div className="absolute core-wrap">
+                  <img
+                    className="absolute z-10 reveal item core-img"
+                    src={story?.items[0].content.img[1].img.filename}
+                    alt=""
+                  />
+                  <img
+                    className="absolute light"
+                    src={story?.items[0].content.img[2].img.filename}
+                    alt=""
+                  />
+                  <img
+                    className="absolute light"
+                    src={story?.items[0].content.img[3].img.filename}
+                    alt=""
+                  />
+                </div>
               </div>
             </div>
             <div className="mb-padding-right">

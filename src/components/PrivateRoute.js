@@ -6,7 +6,7 @@ export const PrivateRoute = () => {
   return (
     localStorage.getItem('auth')
       ? <ErrorBoundary>
-        <HomePage />
+          <HomePage />
         </ErrorBoundary>
       : <Navigate to="/login" />
   )

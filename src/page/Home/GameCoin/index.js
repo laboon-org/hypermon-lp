@@ -21,16 +21,16 @@ import { gql, useQuery } from "@apollo/client";
 const query =  gql`
 {
   HpmlbggamecoinItems{
-	items{
-    id,
-    name,
-    content{
-      feature,
-      describe,
-      attribute,
-      image,
+    items{
+      id,
+      name,
+      content{
+        feature,
+        describe,
+        attribute,
+        image,
+      }
     }
-  	}
   }
 }`;
 

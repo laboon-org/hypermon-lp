@@ -7,7 +7,7 @@ function App() {
   
   return (
     <Router>
-      <div className="App" style={{ overflow: "hidden", width: '100vw'}}>
+      <div className="App" style={{ overflow: "hidden"}}>
         <Routes>
           <Route path="/" element={<PrivateRoute />}>
           </Route>

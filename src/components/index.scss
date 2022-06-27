@@ -19,7 +19,7 @@
       .link {
         &:hover {
           span {
-            color: yellow;
+            color: #E6B86A;
           }
           .link_bg {
             display: block;
@@ -53,7 +53,7 @@
       .link.active {
         display: block;
         span {
-          color: yellow;
+          color: #E6B86A;
         }
         .link_bg {
           display: block;
@@ -70,7 +70,7 @@
     transform: translateX(-50%);
     bottom: 3%;
     font-size: 9px;
-    color: yellow;
+    color: #E6B86A;
   }
   .Footer__nav {
     .wrapper-nav {
@@ -99,11 +99,11 @@
       color: white;
       // padding: 0 40px;
       &:hover {
-        color: yellow;
+        color: #E6B86A;
       }
     }
     .active {
-      color: yellow;
+      color: #E6B86A;
     }
   }
   .Footer__inf {
@@ -124,9 +124,9 @@
         width: 70%;
         margin: 0 auto;
         font-family: "Mulish";
-        color: yellow;
+        color: #E6B86A;
         a {
-          color: #ffffff;
+          color: #00ADEB;
           display: inline-block !important;
         }
       }

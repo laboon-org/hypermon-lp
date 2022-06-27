@@ -61,7 +61,7 @@ const index = () => {
           <div className="content-roadmap">
             <div className="wrapper-text">
               {story?.items[0].content.road_map.map((item,index) => (
-                <div className={`reveal item${index}`}>
+              <div className={`reveal item${index}`}>
                 <span>{item.date_start}</span>
                 <span> <span className="symbol-text">I&nbsp;</span> {item.step}</span>
                 <span>{item.content}</span>
