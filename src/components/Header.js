@@ -64,7 +64,7 @@ const Header = () => {
               className={`link relative z-10 ${link === "GAMEPLAY" ? "active" : ""
                 }`}
               // href="#game_play"
-              href="https://play.hypermon.games/"
+              href="https://play2.hypermon.games/marketplace"
             >
               <img
                 src={HoverNav}
@@ -149,7 +149,7 @@ const Header = () => {
             </a>
             <div className="relative w-100">
 
-              <a href="https://play.hypermon.games/marketplace" className="mb-img-header">
+              <a href="https://play2.hypermon.games/marketplace" className="mb-img-header">
 
                 <img
                   src={showMenu ? link_marketplace_mobile : LogoMP}
