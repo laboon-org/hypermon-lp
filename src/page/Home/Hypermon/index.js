@@ -32,21 +32,31 @@ const query = gql`
 
 const Hypermon = () => {
   const [playerCount, setPlayerCount] = useState(0);
+  const [count, setCount] = useState(0);
   const { data } = useQuery(query, {
     onCompleted: (data) => {
-      setPlayerCount(parseInt(data.HpmlbghomeItems.items[0].content.total_player))
+      setCount(parseInt(data.HpmlbghomeItems.items[0].content.total_player))
     }
   });
   let story = data?.HpmlbghomeItems;
   
-
   useEffect(() => {
-    let timer = setInterval(() => {
-      setPlayerCount((playerCount) => playerCount + 1);
-    }, 5000)
+    let countStep = Math.ceil(count / 500)
+    if (playerCount + countStep < count ) {
+      var timer = setTimeout(() => {
+        setPlayerCount((playerCount) => playerCount + countStep);
+      }, 0)
+    }
+    else setPlayerCount(count); 
 
-    return () => clearInterval(timer);
-  }, []);
+    return () => clearTimeout(timer);
+
+    //TODO: Find a better way to countup
+    
+    // let timer = setInterval(() => {
+    //   setPlayerCount((playerCount) => playerCount + 1);
+    // }, 5000)
+  }, [count, playerCount]);
 
   return (
     <div id="hypermon" className="Hypermon mx-auto mobile-Hypermon">
