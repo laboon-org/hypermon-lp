@@ -32,7 +32,7 @@
       display: block;
       &:first-child {
         font-size: 30px;
-        font-family: "G.I. Incognito";
+        font-family: "G.I. Incognito", sans-serif;
         background: linear-gradient(0deg, #00adeb -1.73%, #006bed 96.03%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -40,14 +40,14 @@
       &:nth-child(2) {
         .symbol-text {
           font-size: 22px;
-          font-family: "UTM Alter Gothic";
+          font-family: "UTM Alter Gothic", sans-serif;
           background: linear-gradient(180deg, #ee9559 0%, #f5e47e 50%, #f3c17c 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
         display: flex;
         font-size: 22px;
-        font-family: "UTM Alter Gothic";
+        font-family: "UTM Alter Gothic", sans-serif;
         background: linear-gradient(180deg, #ee9559 0%, #f5e47e 50%, #f3c17c 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -75,7 +75,7 @@
     width: 652px;
     height: 49px;
     p {
-      font-family: "G.I. Incognito";
+      font-family: "G.I. Incognito", sans-serif;
 
       font-style: normal;
       font-weight: normal;

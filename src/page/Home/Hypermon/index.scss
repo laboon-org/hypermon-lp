@@ -15,7 +15,7 @@
   .style-text {
     margin-right: 5px;
     font-size: 60px;
-    font-family: "G.I. Incognito";
+    font-family: "G.I. Incognito", sans-serif;
     background: linear-gradient(0deg, #00adeb -1.73%, #006bed 96.03%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -50,7 +50,7 @@
       width: 658px;
       height: 54px;
       p {
-        font-family: "G.I. Incognito";
+        font-family: "G.I. Incognito", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 13px;
@@ -77,7 +77,7 @@
         -webkit-text-fill-color: transparent;
       }
       .totalPlayer_text {
-        font-family: CAMPUS PERSONAL USE;
+        font-family: CAMPUS PERSONAL USE, sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -94,7 +94,7 @@
 
       span {
         color: white;
-        font-family: "UTM Alter Gothic";
+        font-family: "UTM Alter Gothic", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 20px;
@@ -115,7 +115,7 @@
       border-image-slice: 1;
       border-image-source: linear-gradient(#00adeb, #006bed);
       span {
-        font-family: "UTM Alter Gothic";
+        font-family: "UTM Alter Gothic", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
