@@ -5,8 +5,6 @@ import "./tablet.scss";
 import "../../../components/reveal.scss";
 import { gql, useQuery } from "@apollo/client";
 
-import IMG_CORE from '../../../_assets/images/core.png'
-
 const query = gql`
 {
   HpmlbggamegemItems{

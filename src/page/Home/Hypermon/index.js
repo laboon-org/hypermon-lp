@@ -34,28 +34,22 @@ const Hypermon = () => {
   const [playerCount, setPlayerCount] = useState(0);
   const [count, setCount] = useState(0);
   const { data } = useQuery(query, {
-    onCompleted: (data) => {
-      setCount(parseInt(data.HpmlbghomeItems.items[0].content.total_player))
+    onCompleted: (respondData) => {
+      setCount(parseInt(respondData.HpmlbghomeItems.items[0].content.total_player))
     }
   });
   let story = data?.HpmlbghomeItems;
-  
+
   useEffect(() => {
     let countStep = Math.ceil(count / 500)
-    if (playerCount + countStep < count ) {
-      var timer = setTimeout(() => {
-        setPlayerCount((playerCount) => playerCount + countStep);
+    let timer
+    if (playerCount + countStep < count) {
+      timer = setTimeout(() => {
+        setPlayerCount((prevalue) => prevalue + countStep);
       }, 0)
+      return () => clearTimeout(timer);
     }
-    else setPlayerCount(count); 
-
-    return () => clearTimeout(timer);
-
-    //TODO: Find a better way to countup
-    
-    // let timer = setInterval(() => {
-    //   setPlayerCount((playerCount) => playerCount + 1);
-    // }, 5000)
+    else setPlayerCount(count);
   }, [count, playerCount]);
 
   return (
@@ -63,11 +57,11 @@ const Hypermon = () => {
       <Header />
       <div className="container mx-auto ">
         <div className="Hypermon__container">
-        <div>
-          <img src={story?.items[0].content.image[0].img.filename} alt="" className="fire mb-fire"/>
+          <div>
+            <img src={story?.items[0].content.image[0].img.filename} alt="" className="fire mb-fire" />
           </div>
           <div>
-          <img src={story?.items[0].content.image[2].img.filename} alt="" className="thunder mb-thunder"/>
+            <img src={story?.items[0].content.image[2].img.filename} alt="" className="thunder mb-thunder" />
           </div>
           <div>
             <img src={story?.items[0].content.image[1].img.filename} alt="" className="light" />
